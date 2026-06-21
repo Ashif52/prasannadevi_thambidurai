@@ -1,0 +1,560 @@
+/* ============================================
+   RESPONSIVE — Mobile-First Luxury Experience
+   ============================================ */
+
+/* ---------- Laptop (< 1440px) ---------- */
+@media (max-width: 1439px) {
+    .portfolio__grid {
+        gap: 1rem;
+    }
+
+    .campaigns__grid {
+        gap: 1.5rem;
+    }
+}
+
+/* ---------- Tablet Landscape (< 1200px) ---------- */
+@media (max-width: 1199px) {
+    .about__grid {
+        gap: var(--space-lg);
+    }
+
+    .measurements__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .measurements__layout {
+        gap: 3rem;
+    }
+
+    .measurements__ring-row {
+        gap: 1rem;
+    }
+
+    .testimonials__split {
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    .timeline__item {
+        gap: var(--space-md);
+    }
+}
+
+/* ---------- Tablet Portrait (< 1024px) ---------- */
+@media (max-width: 1023px) {
+    /* Navigation */
+    .nav__links {
+        display: none;
+    }
+
+    .nav__cta {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: clamp(3rem, 10vw, 6rem);
+    }
+
+    /* About */
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .about__content {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .about__image-wrap {
+        max-width: 500px;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    /* Portfolio */
+    .portfolio__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Campaigns */
+    .campaigns__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Video Showcase */
+    .video-showcase__track {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 var(--container-padding);
+    }
+    .video-card {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+
+    /* Timeline */
+    .timeline__line {
+        left: 25px;
+    }
+
+    .timeline__item,
+    .timeline__item:nth-child(even) {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+        margin-bottom: var(--space-lg);
+    }
+
+    .timeline__year {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        font-size: clamp(2rem, 3.5vw, 2.5rem);
+        margin-bottom: 0.25rem;
+        padding-top: 0;
+    }
+
+    .timeline__dot-container {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .timeline__content {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .timeline__visual {
+        justify-self: start;
+        width: 100%;
+        max-width: 450px;
+        aspect-ratio: 16 / 10;
+    }
+
+    /* Measurements */
+    .measurements__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .measurements__layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .measurements__image-col {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .measurements__ring-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Booking */
+    .booking__inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .booking__content {
+        max-width: 100%;
+    }
+
+    /* Instagram */
+    .instagram__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .instagram__item:nth-child(2),
+    .instagram__item:nth-child(5) {
+        margin-top: 0;
+    }
+
+    .instagram__item--wide {
+        grid-column: span 2;
+    }
+}
+
+/* ---------- Mobile (< 768px) ---------- */
+@media (max-width: 767px) {
+    :root {
+        --space-section: clamp(4rem, 10vh, 6rem);
+        --nav-height: 60px;
+    }
+
+    /* Section Headings Left-alignment */
+    .portfolio__header,
+    .campaigns__header,
+    .video-showcase__header,
+    .timeline__header,
+    .testimonials__header,
+    .instagram__header {
+        text-align: left !important;
+        margin-bottom: var(--space-md);
+    }
+
+    /* Hide cursor on mobile */
+    .cursor {
+        display: none;
+    }
+
+    /* Navigation */
+    .nav {
+        padding: 1rem 0;
+    }
+
+    .nav--scrolled {
+        padding: 0.6rem 0;
+    }
+
+    .nav__brand {
+        font-size: 1rem;
+        letter-spacing: 0.15em;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero__image {
+        object-position: center center;
+    }
+
+    .hero__subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.3em;
+    }
+
+    .hero__title {
+        font-size: clamp(2.5rem, 12vw, 4.5rem);
+    }
+
+    .hero__tagline {
+        font-size: 0.9rem;
+    }
+
+    .hero__cta-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero__cta-group .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero__scroll {
+        bottom: 1.5rem;
+    }
+
+    .hero__scroll-line {
+        height: 40px;
+    }
+
+    /* About */
+    .about__stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .about__stat-number {
+        font-size: 2rem;
+    }
+
+    .about__image-accent {
+        display: none;
+    }
+
+    /* Portfolio */
+    .portfolio__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .portfolio__filters {
+        gap: 0.75rem 1rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: var(--space-md) 0 0;
+    }
+
+    .portfolio__filter {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .portfolio__item-overlay {
+        opacity: 1;
+        transform: translateY(0);
+        padding: 1rem;
+    }
+
+    .portfolio__item-title {
+        font-size: 1rem;
+    }
+
+    /* Campaigns */
+    .campaign-card {
+        padding: 1.5rem;
+    }
+
+    .campaign-card__title {
+        font-size: 1.5rem;
+    }
+
+    /* Video */
+    .video-card {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+
+    .video-card__caption {
+        padding: 1rem;
+    }
+
+    /* Timeline */
+    .timeline__year {
+        font-size: 2.5rem;
+    }
+
+    .timeline__content {
+        padding: var(--space-sm);
+    }
+
+    /* Measurements */
+    .measurements__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .measurement-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .measurement-card__value {
+        font-size: 1.8rem;
+    }
+
+    .measurements__layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .measurements__image-col {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .measurements__ring-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .measurement-card__ring-wrap {
+        width: 90px;
+        height: 90px;
+    }
+
+    .measurements__pill-row {
+        grid-template-columns: 1fr;
+    }
+
+    .measurement-card--pill {
+        padding: 1.2rem 1.4rem;
+    }
+
+    /* Testimonials */
+    .testimonials__split {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .testimonials__image-pane {
+        aspect-ratio: 16 / 10;
+    }
+
+    .testimonials__quote-pane {
+        min-height: auto;
+        padding: 0;
+    }
+
+    .testimonials__controls {
+        margin-top: 2rem;
+    }
+
+    /* Instagram */
+    .instagram__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .instagram__item--wide {
+        grid-column: span 2;
+    }
+
+    .instagram__footer {
+        margin-top: 3.5rem;
+    }
+
+    /* Booking */
+    .booking__card {
+        padding: 2rem 1.5rem;
+    }
+
+    /* Footer */
+    .footer__name {
+        font-size: clamp(2rem, 12vw, 5rem);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    /* Marquee */
+    .marquee__item {
+        font-size: 1.5rem;
+        padding: 0 1.5rem;
+    }
+
+    /* Section Labels */
+    .section-label {
+        margin-bottom: var(--space-md);
+    }
+
+    /* Gradient Orbs */
+    .gradient-orb {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Preloader */
+    .preloader__name {
+        font-size: 1.8rem;
+        letter-spacing: 0.2em;
+    }
+}
+
+/* ---------- Small Mobile (< 480px) ---------- */
+@media (max-width: 479px) {
+    .hero__title {
+        font-size: clamp(2rem, 14vw, 3.5rem);
+    }
+
+    .about__stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__stat-number {
+        font-size: 1.6rem;
+    }
+
+    .about__stat-label {
+        font-size: 0.65rem;
+    }
+
+    .portfolio__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .measurements__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .measurements__ring-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mobile-menu__link {
+        font-size: 2rem;
+    }
+
+    .instagram__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instagram__item--wide {
+        grid-column: span 1;
+    }
+}
+
+/* ---------- Tall screens / safe areas ---------- */
+@supports (padding: env(safe-area-inset-bottom)) {
+    .hero {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .footer {
+        padding-bottom: calc(var(--space-lg) + env(safe-area-inset-bottom));
+    }
+}
+
+/* ---------- High DPI ---------- */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Images are already WebP, no additional handling needed */
+}
+
+/* ---------- Landscape on mobile ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__scroll {
+        display: none;
+    }
+}
+
+/* ---------- Print ---------- */
+@media print {
+    .preloader,
+    .cursor,
+    #three-canvas,
+    .noise-overlay,
+    .gradient-orb,
+    .nav,
+    .hero__scroll,
+    .mobile-menu {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero__overlay {
+        display: none;
+    }
+}
