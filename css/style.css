@@ -179,6 +179,30 @@ button {
     background: var(--color-accent-dark);
 }
 
+/* ---------- Image Lazy Loading & Shimmer ---------- */
+.img-lazy {
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: blur(8px);
+}
+
+.img-lazy.loaded,
+img[loading="lazy"]:not(.img-lazy) {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.shimmer {
+    background: linear-gradient(90deg, rgba(255,255,255,0.02) 25%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.02) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
 /* ---------- Container ---------- */
 .container {
     width: 100%;
@@ -1486,7 +1510,7 @@ h4 { font-size: var(--fs-h4); }
    ============================================ */
 .measurements {
     position: relative;
-    padding: var(--space-section) 0;
+    padding: clamp(8rem, 14vh, 14rem) 0 var(--space-section);
     z-index: 1;
     background: var(--color-cherry-bg);
     overflow: hidden;
@@ -1549,8 +1573,8 @@ h4 { font-size: var(--fs-h4); }
 /* --- Split layout: image + stats --- */
 .measurements__layout {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: clamp(2rem, 5vw, 5rem);
+    grid-template-columns: 1fr 1.3fr;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -1562,7 +1586,7 @@ h4 { font-size: var(--fs-h4); }
 .measurements__image-frame {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
     border: 1px solid var(--color-glass-border);
 }
 
@@ -1570,6 +1594,7 @@ h4 { font-size: var(--fs-h4); }
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     transition: transform var(--duration-slower) var(--ease-out-expo);
 }
 
@@ -1638,126 +1663,179 @@ h4 { font-size: var(--fs-h4); }
 .measurements__stats-col {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
+    gap: 2.5rem;
 }
 
-/* --- Gauges Grid --- */
-.measurements__gauge-grid {
+/* --- Premium Model Card Body Grid --- */
+.mc-body-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.mc-stat-card {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--color-glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1.6rem 1.8rem;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
-}
-
-.measurement-gauge {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-}
-
-.measurement-gauge__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.measurement-gauge__label {
-    font-size: var(--fs-caption);
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    color: var(--color-text-muted);
-}
-
-.measurement-gauge__value {
-    font-family: var(--font-heading);
-    font-size: var(--fs-h3);
-    font-weight: 300;
-    color: var(--color-accent);
-    line-height: 1;
-}
-
-.measurement-gauge__bar {
-    width: 100%;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.08);
+    align-items: center;
+    text-align: center;
     position: relative;
     overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.measurement-gauge__fill {
+.mc-stat-card::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 0%; /* Animated via GSAP / CSS */
-    background: linear-gradient(90deg, var(--color-accent-dark), var(--color-accent));
-    transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-    box-shadow: 0 0 8px var(--color-accent);
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
-/* --- Details Cards Grid --- */
-.measurements__details-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
-}
-
-.measurement-card--pill-new {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.2rem 1.4rem;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--color-glass-border);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: all var(--duration-normal) var(--ease-out-expo);
-    position: relative;
-}
-
-.measurement-card--pill-new:hover {
-    border-color: rgba(214, 180, 126, 0.4);
+.mc-stat-card:hover {
+    border-color: rgba(214, 180, 126, 0.45);
     background: rgba(255, 255, 255, 0.05);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(214, 180, 126, 0.08);
 }
 
-.measurement-card__icon-new {
-    flex: 0 0 auto;
-    width: 32px;
-    height: 32px;
+.mc-stat-card:hover::before {
+    opacity: 1;
+}
+
+.mc-stat-card--hero {
+    grid-column: 1 / -1;
+    padding: 2.2rem 2rem;
+    background: linear-gradient(135deg, rgba(214, 180, 126, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-color: rgba(214, 180, 126, 0.25);
+}
+
+.mc-stat-card__label {
+    font-size: var(--fs-caption);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+}
+
+.mc-stat-card__divider {
+    width: 24px;
+    height: 1px;
+    background: rgba(214, 180, 126, 0.3);
+    margin-bottom: 0.8rem;
+    transition: width 0.4s ease, background 0.4s ease;
+}
+
+.mc-stat-card:hover .mc-stat-card__divider {
+    width: 40px;
+    background: var(--color-accent);
+}
+
+.mc-stat-card__value {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 500;
+    color: var(--color-accent);
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.mc-stat-card--hero .mc-stat-card__value {
+    font-size: clamp(2.6rem, 4.5vw, 3.6rem);
+    background: linear-gradient(135deg, #F5E5C9 0%, #D6B47E 50%, #A8864B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Decorative Gold Flourish */
+.mc-flourish {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: rgba(214, 180, 126, 0.08);
-    border: 1px solid rgba(214, 180, 126, 0.15);
+    gap: 1.2rem;
+    margin: 0.5rem 0;
+    opacity: 0.6;
+}
+
+.mc-flourish__line {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, rgba(214, 180, 126, 0.3), transparent);
+}
+
+.mc-flourish__diamond {
     color: var(--color-accent);
-    font-size: 0.95rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
 }
 
-.measurement-card__icon-new svg {
-    width: 16px;
-    height: 16px;
+/* --- Attribute Cards Grid --- */
+.mc-attr-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
-.measurement-card__text-new {
+.mc-attr-card {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem 0.8rem;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid var(--color-glass-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 4px;
+    transition: all 0.35s ease;
 }
 
-.measurement-card__label-new {
+.mc-attr-card:hover {
+    border-color: rgba(214, 180, 126, 0.35);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-2px);
+}
+
+.mc-attr-card__icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mc-attr-card:hover .mc-attr-card__icon {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.mc-attr-card__label {
     font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     color: var(--color-text-muted);
+    margin-bottom: 0.3rem;
 }
 
-.measurement-card__value-new {
-    font-family: var(--font-heading);
-    font-size: var(--fs-body);
-    font-weight: 400;
+.mc-attr-card__value {
+    font-size: 0.85rem;
     color: var(--color-text);
-    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.04em;
 }
 
 /* ============================================

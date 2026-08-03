@@ -357,34 +357,49 @@
             );
         }
 
-        const gauges = gsap.utils.toArray('.measurement-gauge');
-        gauges.forEach((gauge) => {
-            const fill = gauge.querySelector('.measurement-gauge__fill');
-            const percent = gauge.getAttribute('style').match(/--gauge-percent:\s*([^;]+)/)[1];
-            
-            gsap.fromTo(gauge,
-                { y: 30, opacity: 0 },
+        /* Stat Cards — slide in with stagger */
+        const statCards = gsap.utils.toArray('.mc-stat-card');
+        if (statCards.length > 0) {
+            gsap.fromTo(statCards,
+                { y: 40, opacity: 0 },
                 {
                     y: 0,
                     opacity: 1,
+                    stagger: 0.1,
                     duration: 0.8,
                     ease: 'power3.out',
                     scrollTrigger: {
-                        trigger: gauge,
+                        trigger: '.mc-body-grid',
                         start: 'top 85%',
                         toggleActions: 'play none none none'
-                    },
-                    onStart: () => {
-                        gsap.to(fill, { width: percent, duration: 1.5, ease: 'power3.out' });
                     }
                 }
             );
-        });
+        }
 
-        /* Detail Cards — slide in with stagger */
-        const detailCards = gsap.utils.toArray('.measurement-card--pill-new');
-        if (detailCards.length > 0) {
-            gsap.fromTo(detailCards,
+        /* Flourish animation */
+        const flourish = document.querySelector('.mc-flourish');
+        if (flourish) {
+            gsap.fromTo(flourish,
+                { scale: 0.8, opacity: 0 },
+                {
+                    scale: 1,
+                    opacity: 0.6,
+                    duration: 0.8,
+                    ease: 'back.out(1.7)',
+                    scrollTrigger: {
+                        trigger: flourish,
+                        start: 'top 90%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+        }
+
+        /* Attribute Cards — slide in with stagger */
+        const attrCards = gsap.utils.toArray('.mc-attr-card');
+        if (attrCards.length > 0) {
+            gsap.fromTo(attrCards,
                 { y: 30, opacity: 0 },
                 {
                     y: 0,
@@ -393,7 +408,7 @@
                     duration: 0.8,
                     ease: 'power3.out',
                     scrollTrigger: {
-                        trigger: '.measurements__details-grid',
+                        trigger: '.mc-attr-grid',
                         start: 'top 90%',
                         toggleActions: 'play none none none'
                     }
@@ -414,33 +429,17 @@
                 btnImperial.classList.remove('active');
             }
             
-            // 1. Update gauges
-            document.querySelectorAll('.measurement-gauge').forEach((gauge) => {
-                const valEl = gauge.querySelector('.measurement-gauge__value');
-                if (valEl) {
-                    const text = valEl.getAttribute(`data-${unit}`);
-                    gsap.to(valEl, {
-                        opacity: 0,
-                        y: -5,
-                        duration: 0.2,
-                        onComplete: () => {
-                            valEl.textContent = text;
-                            gsap.fromTo(valEl, { y: 5, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2 });
-                        }
-                    });
-                }
-            });
-            
-            // 2. Update pill values
-            document.querySelectorAll('.measurement-card__value-new[data-imperial]').forEach((valEl) => {
+            // Update all elements with data-imperial attribute
+            document.querySelectorAll('[data-imperial]').forEach((valEl) => {
                 const text = valEl.getAttribute(`data-${unit}`);
+                if (!text) return;
                 gsap.to(valEl, {
                     opacity: 0,
-                    x: -5,
+                    y: -5,
                     duration: 0.2,
                     onComplete: () => {
-                        valEl.textContent = text;
-                        gsap.fromTo(valEl, { x: 5, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2 });
+                        valEl.innerHTML = text;
+                        gsap.fromTo(valEl, { y: 5, opacity: 0 }, { y: 0, opacity: 1, duration: 0.2 });
                     }
                 });
             });
