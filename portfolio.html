@@ -14,7 +14,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Prasanna Devi — Fashion Model">
     <meta property="og:description" content="Professional fashion, commercial, editorial & jewellery model based in Chennai, Tamil Nadu.">
-    <meta property="og:image" content="assets/model/studio/model-studio-02.webp">
+    <meta property="og:image" content="assets/model/hero.jpg">
     <meta property="og:url" content="https://prasannadevi.com/">
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="en_US">
@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Prasanna Devi — Fashion Model">
     <meta name="twitter:description" content="Professional fashion, commercial, editorial & jewellery model based in Chennai, Tamil Nadu.">
-    <meta name="twitter:image" content="assets/model/studio/model-studio-02.webp">
+    <meta name="twitter:image" content="assets/model/hero.jpg">
 
     <!-- Schema.org Person Markup -->
     <script type="application/ld+json">
@@ -35,7 +35,7 @@
         "jobTitle": "Fashion Model",
         "description": "Professional fashion, commercial, editorial & jewellery model",
         "url": "https://prasannadevi.com",
-        "image": "assets/model/studio/model-studio-02.webp",
+        "image": "assets/model/hero.jpg",
         "email": "prasannadevithambidurai@gmail.com",
         "address": {
             "@type": "PostalAddress",
@@ -61,9 +61,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/shoot-map.css">
 
     <!-- Preload hero image -->
-    <link rel="preload" as="image" href="assets/model/studio/model-studio-02.webp">
+    <link rel="preload" as="image" href="assets/model/hero.jpg">
 </head>
 <body>
 
@@ -115,14 +116,15 @@
                 <a href="#hero" class="nav__brand magnetic-wrap" id="nav-brand">Prasanna Devi</a>
 
                 <ul class="nav__links" id="nav-links">
-                    <li><a href="#about" class="nav__link magnetic-wrap" data-section="about">About</a></li>
-                    <li><a href="#portfolio" class="nav__link magnetic-wrap" data-section="portfolio">Portfolio</a></li>
-                    <li><a href="#campaigns" class="nav__link magnetic-wrap" data-section="campaigns">Campaigns</a></li>
-                    <li><a href="#timeline" class="nav__link magnetic-wrap" data-section="timeline">Journey</a></li>
-                    <li><a href="#measurements" class="nav__link magnetic-wrap" data-section="measurements">Stats</a></li>
+                    <li><a href="#hero" class="nav__link magnetic-wrap" data-section="hero">Home</a></li>
+
+                    <li><a href="#story" class="nav__link magnetic-wrap" data-section="story">Story</a></li>
+                    <li><a href="#work" class="nav__link magnetic-wrap" data-section="work">Work</a></li>
+                    <li><a href="#brands" class="nav__link magnetic-wrap" data-section="brands">Brands</a></li>
+                    <li><a href="#instagram" class="nav__link magnetic-wrap" data-section="instagram">Instagram</a></li>
                 </ul>
 
-                <a href="#booking" class="nav__cta magnetic-wrap">Book Now</a>
+                <a href="https://www.instagram.com/prasannadevi_thambidurai/" target="_blank" rel="noopener noreferrer" class="nav__cta magnetic-wrap">Let's Work Together</a>
 
                 <button class="nav__toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                     <span></span>
@@ -137,12 +139,12 @@
     <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
         <ul class="mobile-menu__links">
             <li><a href="#hero" class="mobile-menu__link" data-mobile-link>Home</a></li>
-            <li><a href="#about" class="mobile-menu__link" data-mobile-link>About</a></li>
-            <li><a href="#portfolio" class="mobile-menu__link" data-mobile-link>Portfolio</a></li>
-            <li><a href="#campaigns" class="mobile-menu__link" data-mobile-link>Campaigns</a></li>
-            <li><a href="#timeline" class="mobile-menu__link" data-mobile-link>Journey</a></li>
-            <li><a href="#measurements" class="mobile-menu__link" data-mobile-link>Stats</a></li>
-            <li><a href="#booking" class="mobile-menu__link" data-mobile-link>Booking</a></li>
+
+            <li><a href="#story" class="mobile-menu__link" data-mobile-link>Story</a></li>
+            <li><a href="#work" class="mobile-menu__link" data-mobile-link>Work</a></li>
+            <li><a href="#brands" class="mobile-menu__link" data-mobile-link>Brands</a></li>
+            <li><a href="#instagram" class="mobile-menu__link" data-mobile-link>Instagram</a></li>
+            <li><a href="https://www.instagram.com/prasannadevi_thambidurai/" target="_blank" rel="noopener noreferrer" class="mobile-menu__link" data-mobile-link>Let's Work Together</a></li>
         </ul>
     </div>
 
@@ -150,7 +152,7 @@
     <section class="hero" id="hero" aria-label="Hero section">
         <div class="hero__bg" id="hero-bg">
             <img
-                src="assets/model/studio/model-studio-02.webp"
+                src="assets/model/hero.jpg"
                 alt="Prasanna Devi — Fashion Model Portrait"
                 class="hero__image"
                 id="hero-image"
@@ -160,18 +162,18 @@
         </div>
 
         <div class="hero__content" id="hero-content">
-            <p class="hero__subtitle" data-animate="fade-up">Fashion · Editorial · Commercial · Jewellery</p>
+            <p class="hero__subtitle" data-animate="fade-up">Fashion · Editorial · Commercial · Jewellery · Runway · Beauty</p>
             <h1 class="hero__title split-text" id="hero-title" data-splitting>
                 Prasanna Devi
             </h1>
             <p class="hero__tagline" data-animate="fade-up">Redefining elegance, one frame at a time</p>
             <div class="hero__cta-group" data-animate="fade-up">
-                <a href="#portfolio" class="btn btn--primary magnetic-wrap">
-                    View Portfolio
+                <a href="#work" class="btn btn--primary magnetic-wrap">
+                    Explore Work
                     <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="#booking" class="btn btn--glass magnetic-wrap">
-                    Book a Session
+                <a href="https://www.instagram.com/prasannadevi_thambidurai/" target="_blank" rel="noopener noreferrer" class="btn btn--glass magnetic-wrap">
+                    Let's Work Together
                 </a>
             </div>
         </div>
@@ -182,852 +184,444 @@
         </div>
     </section>
 
-    <!-- ==================== ABOUT ==================== -->
-    <section class="about" id="about" aria-label="About Prasanna Devi">
-        <div class="gradient-orb gradient-orb--gold" style="top: 10%; right: -10%;" aria-hidden="true"></div>
+    <!-- ==================== THE STORY / EDITORIAL NARRATIVE & SPECIFICATIONS ==================== -->
+    <section class="story-section" id="story" aria-label="Prasanna Devi Story and Model Specifications">
         <div class="container">
             <div class="section-label" data-animate="fade-up">
-                <span class="section-number">01</span> About
+                <span class="section-number">02</span> About &amp; Specifications
             </div>
 
-            <div class="about__grid">
-                <div class="about__image-wrap image-reveal" data-animate="reveal-left">
-                    <div class="about__image-frame parallax-wrap">
-                        <img
-                            src="assets/model/portraits/model-portrait-01.webp"
-                            alt="Prasanna Devi editorial portrait"
-                            class="parallax-img"
-                            loading="lazy"
-                        >
+            <div class="story__layout">
+                <!-- Visuals Column with Asymmetric Stacking & Comp Card Actions -->
+                <div class="story__visuals-col" data-animate="fade-up">
+                    <div class="story-portrait-stack">
+                        <div class="story-frame--primary">
+                            <img src="assets/model/editorial/editorial-02.jpeg" alt="Prasanna Devi Editorial High Fashion Portrait" loading="lazy">
+                            <div class="story-frame__caption">
+                                <span>The Vision</span>
+                                <h4>Poise &bull; Presence &bull; Precision</h4>
+                            </div>
+                        </div>
+                        <div class="story-frame--accent">
+                            <img src="assets/model/editorial/jewellery-07.jpeg" alt="Prasanna Devi Fine Jewellery Detail" loading="lazy">
+                        </div>
+                        <div class="story-quote-card">
+                            <p class="story-quote-text">&ldquo;Fashion isn&rsquo;t just clothing; it is the emotion conveyed between the light and the lens.&rdquo;</p>
+                            <span class="story-quote-author">Prasanna Devi</span>
+                        </div>
                     </div>
-                    <div class="about__image-accent" aria-hidden="true"></div>
+
+                    <!-- Quick Comp Card & Agency Status Panel -->
+                    <div class="story-quick-card">
+                        <div class="story-quick-card__badge">
+                            <span class="stats-badge-dot"></span>
+                            Agency Represented &bull; Worldwide Available
+                        </div>
+                        <div class="story-quick-card__actions">
+                            <button id="view-comp-card-btn" class="btn btn--glass btn--small" aria-label="Open Comp Card modal">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;margin-right:8px;"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+                                Digital Comp Card
+                            </button>
+                            <a href="assets/model/hero.jpg" download="Prasanna_Devi_CompCard.jpg" class="btn btn--glass btn--small" aria-label="Download specifications">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;margin-right:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                Download Specs
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="about__content">
-                    <h2 class="about__heading" data-animate="fade-up">
-                        Grace in <em>every</em> frame
-                    </h2>
-                    <p class="about__text" data-animate="fade-up">
-                        Prasanna Devi is a versatile fashion model based in Chennai, Tamil Nadu, with a natural ability to transform before the camera. From high-fashion editorial shoots to traditional jewellery campaigns, she brings an effortless elegance and commanding presence to every project.
+                <!-- Narrative & Vitals Column -->
+                <div class="story__narrative-col" data-animate="fade-up">
+                    <span class="story__badge">About Me &amp; My Journey</span>
+                    <h2 class="story__heading">From Classical Grace to <em class="text-accent text-gold">High-Fashion Couture</em></h2>
+                    <div class="story__divider"></div>
+                    
+                    <p class="story__lead">
+                        Rooted in Chennai and commanding audiences across South Asia, I bring an arresting synergy of heritage elegance, high-fashion poise, and sharp contemporary editorial aesthetic.
                     </p>
-                    <p class="about__text" data-animate="fade-up">
-                        With experience spanning fashion walks, commercial advertisements, concept photoshoots, and serving as a muse for professional makeup artists, Prasanna embodies the intersection of contemporary style and timeless Indian beauty. Her portfolio reflects a dedication to the craft and an innate understanding of light, movement, and emotion.
+                    
+                    <p class="story__body">
+                        With an intuitive grasp of proportion, silhouette, and camera kinetics, I collaborate with creative directors to transform commercial concepts into memorable visual stories. From leading national campaigns for heritage jewellery houses like Malabar Gold &amp; Diamonds to walking designer runways and crafting avant-garde editorials, my craft is defined by effortless authenticity.
                     </p>
 
-                    <div class="about__stats" data-animate="fade-up">
-                        <div class="about__stat">
-                            <div class="about__stat-number counter" data-target="5">0</div>
-                            <div class="about__stat-label">Categories</div>
+                    <!-- Narrative Pillars (First Person) -->
+                    <div class="story__pillars">
+                        <div class="story-pillar">
+                            <span class="story-pillar__number">01</span>
+                            <div class="story-pillar__info">
+                                <h5>Versatility of Canvas</h5>
+                                <p>I transition seamlessly between intricate 22k temple bridal jewellery and stark, modern monochromatic streetwear editorials.</p>
+                            </div>
                         </div>
-                        <div class="about__stat">
-                            <div class="about__stat-number counter" data-target="20">0</div>
-                            <div class="about__stat-label">Shoots</div>
+                        <div class="story-pillar">
+                            <span class="story-pillar__number">02</span>
+                            <div class="story-pillar__info">
+                                <h5>Director-Focused Discipline</h5>
+                                <p>Deep technical command of studio lighting ratios, garment kinetics, lens focal lengths, and runway tempo.</p>
+                            </div>
                         </div>
-                        <div class="about__stat">
-                            <div class="about__stat-number counter" data-target="3">0</div>
-                            <div class="about__stat-label">Brands</div>
+                        <div class="story-pillar">
+                            <span class="story-pillar__number">03</span>
+                            <div class="story-pillar__info">
+                                <h5>Global Editorial Standards</h5>
+                                <p>Committed to world-class professional ethics, rapid adaptation, and expressive artistic collaboration on set.</p>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Footer & Signature -->
+                    <div class="story__footer">
+                        <div class="story__signature-block">
+                            <span class="story__signature-name">Prasanna Devi</span>
+                            <span class="story__signature-loc">Chennai &bull; International Representation</span>
+                        </div>
+                        <div class="story__footer-actions">
+                            <a href="#work" class="btn btn--outline btn--small magnetic-wrap">
+                                Explore Selected Works
+                                <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/prasannadevi_thambidurai/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small magnetic-wrap">
+                                Let's Work Together
+                                <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full-Width Model Specifications & Vitals Dossier -->
+            <div class="story-stats-dossier story-stats-dossier--fullwidth" data-animate="fade-up">
+                <div class="story-stats-dossier__header">
+                    <div>
+                        <span class="story-stats-tag">MODEL SPECIFICATIONS</span>
+                        <h3 class="story-stats-title">Vitals &amp; Industry Measurements</h3>
+                    </div>
+                    <div class="unit-toggle-wrap">
+                        <button class="unit-toggle-btn active" id="unit-toggle-imperial" aria-label="Switch to Imperial units">Imperial</button>
+                        <div class="unit-toggle-divider"></div>
+                        <button class="unit-toggle-btn" id="unit-toggle-metric" aria-label="Switch to Metric units">Metric</button>
+                    </div>
+                </div>
+
+                <!-- Vitals Grid (6-Column Full Width) -->
+                <div class="story-vitals-grid">
+                    <div class="story-vital-item story-vital-item--hero">
+                        <span class="story-vital-key">Height</span>
+                        <span class="story-vital-val" data-imperial="5'4&quot;" data-metric="163 cm">5'4"</span>
+                        <span class="story-vital-sub" data-imperial="64 inches" data-metric="1.63 m">64 inches</span>
+                    </div>
+                    <div class="story-vital-item">
+                        <span class="story-vital-key">Weight</span>
+                        <span class="story-vital-val" data-imperial="123.5 lbs" data-metric="56 kg">123.5 lbs</span>
+                        <span class="story-vital-sub">Athletic / Toned</span>
+                    </div>
+                    <div class="story-vital-item">
+                        <span class="story-vital-key">Bust</span>
+                        <span class="story-vital-val" data-imperial="33&quot;" data-metric="84 cm">33"</span>
+                        <span class="story-vital-sub">32B Cup</span>
+                    </div>
+                    <div class="story-vital-item">
+                        <span class="story-vital-key">Waist</span>
+                        <span class="story-vital-val" data-imperial="28&quot;" data-metric="71 cm">28"</span>
+                        <span class="story-vital-sub">Contour Fit</span>
+                    </div>
+                    <div class="story-vital-item">
+                        <span class="story-vital-key">Hips</span>
+                        <span class="story-vital-val" data-imperial="33&quot;" data-metric="84 cm">33"</span>
+                        <span class="story-vital-sub">Couture Standard</span>
+                    </div>
+                    <div class="story-vital-item">
+                        <span class="story-vital-key">Shoe Size</span>
+                        <span class="story-vital-val" data-imperial="8 US" data-metric="39 EU">8 US</span>
+                        <span class="story-vital-sub">5.5 UK / 39 EU</span>
+                    </div>
+                </div>
+
+                <!-- Agency Attributes Chips -->
+                <div class="story-attributes-bar">
+                    <div class="story-attr-chip">
+                        <span class="chip-label">Dress</span>
+                        <span class="chip-val" data-imperial="4 US" data-metric="36 EU">4 US (36 EU)</span>
+                    </div>
+                    <div class="story-attr-chip">
+                        <span class="chip-label">Skin Tone</span>
+                        <span class="chip-val">Medium Fair Warm</span>
+                    </div>
+                    <div class="story-attr-chip">
+                        <span class="chip-label">Eye Color</span>
+                        <span class="chip-val">Deep Dark Brown</span>
+                    </div>
+                    <div class="story-attr-chip">
+                        <span class="chip-label">Hair Color</span>
+                        <span class="chip-val">Natural Black</span>
+                    </div>
+                    <div class="story-attr-chip">
+                        <span class="chip-label">Base Location</span>
+                        <span class="chip-val">Chennai, India</span>
+                    </div>
+                    <div class="story-attr-chip">
+                        <span class="chip-label">Travel Status</span>
+                        <span class="chip-val">Passport Ready</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PORTFOLIO ==================== -->
-    <section class="portfolio" id="portfolio" aria-label="Portfolio gallery">
+    <!-- ==================== WORK / PORTFOLIO ==================== -->
+    <section class="work-section portfolio" id="work" aria-label="Portfolio and Selected Works">
         <div class="gradient-orb gradient-orb--rosewood" style="bottom: 20%; left: -15%;" aria-hidden="true"></div>
+        <div class="gradient-orb gradient-orb--cabernet" style="top: 15%; right: -12%;" aria-hidden="true"></div>
         <div class="container">
             <div class="section-label" data-animate="fade-up">
-                <span class="section-number">02</span> Portfolio
+                <span class="section-number">03</span> Selected Disciplines
             </div>
 
             <div class="portfolio__header">
-                <h2 class="portfolio__heading" data-animate="fade-up">Selected <em class="text-accent text-gold">Works</em></h2>
+                <h2 class="portfolio__heading" data-animate="fade-up">Selected <em class="text-accent text-gold">Disciplines</em></h2>
+                <p class="portfolio__subtitle-lead" data-animate="fade-up">
+                    A curated archive of high-fashion editorials, commercial brand campaigns, haute couture runway presentations, traditional temple jewellery, and beauty portraits.
+                </p>
             </div>
 
-            <div class="portfolio__filters" data-animate="fade-up" role="tablist" aria-label="Portfolio categories">
-                <button class="portfolio__filter portfolio__filter--active" data-filter="all" role="tab" aria-selected="true">All</button>
-                <button class="portfolio__filter" data-filter="editorial" role="tab" aria-selected="false">Editorial</button>
-                <button class="portfolio__filter" data-filter="fashion" role="tab" aria-selected="false">Fashion</button>
-                <button class="portfolio__filter" data-filter="beauty" role="tab" aria-selected="false">Beauty</button>
-                <button class="portfolio__filter" data-filter="jewellery" role="tab" aria-selected="false">Jewellery</button>
-                <button class="portfolio__filter" data-filter="runway" role="tab" aria-selected="false">Runway</button>
-                <button class="portfolio__filter" data-filter="outdoor" role="tab" aria-selected="false">Outdoor</button>
-            </div>
-
-            <div class="portfolio__grid" id="portfolio-grid" role="tabpanel">
-                <!-- Editorial -->
-                <div class="portfolio__item" data-category="editorial" data-animate="fade-up">
-                    <a href="assets/model/studio/model-studio-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Editorial — Dark Glamour">
-                        <img src="assets/model/studio/model-studio-01.webp" alt="Prasanna Devi dark glamour editorial shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Editorial</span>
-                            <h3 class="portfolio__item-title">Dark Glamour</h3>
-                        </div>
-                    </a>
+            <!-- ==================== CATEGORY CARDS MOSAIC (From Handwritten Wireframe) ==================== -->
+            <div class="work-disciplines" data-animate="fade-up">
+                <!-- Card 1: Commercial (Row 1 Left) -->
+                <div class="work-category-card work-category-card--commercial" data-category="commercial" role="button" tabindex="0" aria-label="Explore Commercial Shoots">
+                    <div class="work-category-card__media">
+                        <img src="assets/model/Commercial/Malabar gold and diamonds promotion.jpeg" alt="Prasanna Devi Commercial Brand Campaigns" class="work-category-card__img" loading="lazy">
+                        <div class="work-category-card__overlay"></div>
+                    </div>
+                    <div class="work-category-card__badge-bar">
+                        <span class="work-category-card__tag">Commercial</span>
+                        <span class="work-category-card__count">5 Campaigns</span>
+                    </div>
+                    <div class="work-category-card__content">
+                        <h3 class="work-category-card__title">Commercial</h3>
+                        <p class="work-category-card__desc">Malabar Gold &amp; Diamonds, Nimali House of Naidu Hall &amp; national brand narratives.</p>
+                        <span class="work-category-card__action">
+                            Explore Showcase
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
                 </div>
 
-                <div class="portfolio__item" data-category="editorial" data-animate="fade-up">
-                    <a href="assets/model/studio/model-studio-04.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Editorial — Midnight Muse">
-                        <img src="assets/model/studio/model-studio-04.webp" alt="Prasanna Devi editorial concept shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Editorial</span>
-                            <h3 class="portfolio__item-title">Midnight Muse</h3>
-                        </div>
-                    </a>
+                <!-- Card 2: Fashion (Row 1 Right) -->
+                <div class="work-category-card work-category-card--fashion" data-category="fashion" role="button" tabindex="0" aria-label="Explore Fashion Looks">
+                    <div class="work-category-card__media">
+                        <img src="assets/model/fashion/fashion-01.jpeg" alt="Prasanna Devi Contemporary Fashion" class="work-category-card__img" loading="lazy">
+                        <div class="work-category-card__overlay"></div>
+                    </div>
+                    <div class="work-category-card__badge-bar">
+                        <span class="work-category-card__tag">Fashion</span>
+                        <span class="work-category-card__count">8 Looks</span>
+                    </div>
+                    <div class="work-category-card__content">
+                        <h3 class="work-category-card__title">Fashion</h3>
+                        <p class="work-category-card__desc">Contemporary couture, streetwear aesthetics & bold experimental silhouettes.</p>
+                        <span class="work-category-card__action">
+                            Explore Showcase
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
                 </div>
 
-                <div class="portfolio__item" data-category="editorial" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-04.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Editorial — Serenity">
-                        <img src="assets/model/outdoor/model-outdoor-04.webp" alt="Prasanna Devi soft editorial portrait" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Editorial</span>
-                            <h3 class="portfolio__item-title">Serenity</h3>
-                        </div>
-                    </a>
+                <!-- Card 3: Editorial (Row 2 Wide Center Banner) -->
+                <div class="work-category-card work-category-card--editorial" data-category="editorial" role="button" tabindex="0" aria-label="Explore Editorial Stories">
+                    <div class="work-category-card__media">
+                        <img src="assets/model/editorial/editorial-02.jpeg" alt="Prasanna Devi High Concept Editorial" class="work-category-card__img" loading="lazy">
+                        <div class="work-category-card__overlay"></div>
+                    </div>
+                    <div class="work-category-card__badge-bar">
+                        <span class="work-category-card__tag">Editorial</span>
+                        <span class="work-category-card__count">9 Frames</span>
+                    </div>
+                    <div class="work-category-card__content">
+                        <h3 class="work-category-card__title">Editorial</h3>
+                        <p class="work-category-card__desc">Cinematic conceptual photography, artistic direction & expressive storytelling.</p>
+                        <span class="work-category-card__action">
+                            Explore Showcase
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
                 </div>
 
-                <!-- Fashion -->
-                <div class="portfolio__item" data-category="fashion" data-animate="fade-up">
-                    <a href="assets/model/fashion/model-fashion-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Fashion — Countryside Elegance">
-                        <img src="assets/model/fashion/model-fashion-01.webp" alt="Prasanna Devi outdoor fashion shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Fashion</span>
-                            <h3 class="portfolio__item-title">Countryside Elegance</h3>
-                        </div>
-                    </a>
+                <!-- Card 4: Jewellery (Row 3 Left) -->
+                <div class="work-category-card work-category-card--jwellery" data-category="jwellery" role="button" tabindex="0" aria-label="Explore Jewellery Campaigns">
+                    <div class="work-category-card__media">
+                        <img src="assets/model/jwellery/jewellery-01.jpeg" alt="Prasanna Devi Fine Jewellery Campaign" class="work-category-card__img" loading="lazy">
+                        <div class="work-category-card__overlay"></div>
+                    </div>
+                    <div class="work-category-card__badge-bar">
+                        <span class="work-category-card__tag">Jewellery</span>
+                        <span class="work-category-card__count">7 Campaigns</span>
+                    </div>
+                    <div class="work-category-card__content">
+                        <h3 class="work-category-card__title">Jewellery</h3>
+                        <p class="work-category-card__desc">South Indian heritage gold, royal bridal pieces & ornate gemstone craftsmanship.</p>
+                        <span class="work-category-card__action">
+                            Explore Showcase
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
                 </div>
 
-                <div class="portfolio__item" data-category="fashion" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Fashion — Natural Light">
-                        <img src="assets/model/outdoor/model-outdoor-01.webp" alt="Prasanna Devi fashion concept shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Fashion</span>
-                            <h3 class="portfolio__item-title">Natural Light</h3>
-                        </div>
-                    </a>
+                <!-- Card 5: Beauty (Row 3 Center) -->
+                <div class="work-category-card work-category-card--beauty" data-category="beauty" role="button" tabindex="0" aria-label="Explore Beauty Portraits">
+                    <div class="work-category-card__media">
+                        <img src="assets/model/jwellery/jewellery-06.jpeg" alt="Prasanna Devi Beauty and Close-ups" class="work-category-card__img" loading="lazy">
+                        <div class="work-category-card__overlay"></div>
+                    </div>
+                    <div class="work-category-card__badge-bar">
+                        <span class="work-category-card__tag">Beauty</span>
+                        <span class="work-category-card__count">5 Features</span>
+                    </div>
+                    <div class="work-category-card__content">
+                        <h3 class="work-category-card__title">Beauty</h3>
+                        <p class="work-category-card__desc">Flawless facial features, radiant skin, bridal MUA looks & clean natural close-ups.</p>
+                        <span class="work-category-card__action">
+                            Explore Showcase
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
                 </div>
 
-                <div class="portfolio__item" data-category="fashion" data-animate="fade-up">
-                    <a href="assets/model/events/model-event-02.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Fashion — Urban Edge">
-                        <img src="assets/model/events/model-event-02.webp" alt="Prasanna Devi streetwear fashion shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Fashion</span>
-                            <h3 class="portfolio__item-title">Urban Edge</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="fashion" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-03.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Fashion — Rooftop Stories">
-                        <img src="assets/model/outdoor/model-outdoor-03.webp" alt="Prasanna Devi rooftop fashion shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Fashion</span>
-                            <h3 class="portfolio__item-title">Rooftop Stories</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="fashion" data-animate="fade-up">
-                    <a href="assets/model/traditional/model-traditional-02.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Fashion — Crimson Night">
-                        <img src="assets/model/traditional/model-traditional-02.webp" alt="Prasanna Devi fashion shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Fashion</span>
-                            <h3 class="portfolio__item-title">Crimson Night</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Beauty -->
-                <div class="portfolio__item" data-category="beauty" data-animate="fade-up">
-                    <a href="assets/model/portraits/model-portrait-02.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Beauty — Golden Hour">
-                        <img src="assets/model/portraits/model-portrait-02.webp" alt="Prasanna Devi beauty portrait with jewelry" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Beauty</span>
-                            <h3 class="portfolio__item-title">Golden Hour</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="beauty" data-animate="fade-up">
-                    <a href="assets/model/editorial/model-editorial-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Beauty — Traditional Opulence">
-                        <img src="assets/model/editorial/model-editorial-01.webp" alt="Prasanna Devi traditional beauty portrait" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Beauty</span>
-                            <h3 class="portfolio__item-title">Traditional Opulence</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="beauty" data-animate="fade-up">
-                    <a href="assets/model/traditional/model-traditional-04.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Beauty — Gilded Dreams">
-                        <img src="assets/model/traditional/model-traditional-04.webp" alt="Prasanna Devi beauty MUA shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Beauty</span>
-                            <h3 class="portfolio__item-title">Gilded Dreams</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Jewellery -->
-                <div class="portfolio__item" data-category="jewellery" data-animate="fade-up">
-                    <a href="assets/model/traditional/model-traditional-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Jewellery — MBJ Venkateswara Jewellers">
-                        <img src="assets/model/traditional/model-traditional-01.webp" alt="Prasanna Devi jewellery advertisement shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Jewellery</span>
-                            <h3 class="portfolio__item-title">Venkateswara Jewellers</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="jewellery" data-animate="fade-up">
-                    <a href="assets/model/traditional/model-traditional-03.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Jewellery — Temple Heritage">
-                        <img src="assets/model/traditional/model-traditional-03.webp" alt="Prasanna Devi traditional jewellery shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Jewellery</span>
-                            <h3 class="portfolio__item-title">Temple Heritage</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="jewellery" data-animate="fade-up">
-                    <a href="assets/model/closeups/model-closeup-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Jewellery — Classic Gold">
-                        <img src="assets/model/closeups/model-closeup-01.webp" alt="Prasanna Devi jewellery campaign" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Jewellery</span>
-                            <h3 class="portfolio__item-title">Classic Gold</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Runway -->
-                <div class="portfolio__item" data-category="runway" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-02.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Runway — Red Satin">
-                        <img src="assets/model/outdoor/model-outdoor-02.webp" alt="Prasanna Devi fashion walk" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Runway</span>
-                            <h3 class="portfolio__item-title">Red Satin</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="runway" data-animate="fade-up">
-                    <a href="assets/model/fashion/model-fashion-02.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Runway — Fashion Week">
-                        <img src="assets/model/fashion/model-fashion-02.webp" alt="Prasanna Devi runway event" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Runway</span>
-                            <h3 class="portfolio__item-title">Fashion Week</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="runway" data-animate="fade-up">
-                    <a href="assets/model/events/model-event-01.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Runway — After Dark">
-                        <img src="assets/model/events/model-event-01.webp" alt="Prasanna Devi backstage at fashion show" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Runway</span>
-                            <h3 class="portfolio__item-title">After Dark</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Outdoor / Rooftop Urban Shoot -->
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-05.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Rooftop Blazer Standing">
-                        <img src="assets/model/outdoor/model-outdoor-05.jpeg" alt="Prasanna Devi rooftop red blazer portrait" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Rooftop Stance</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-06.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Low Angle Crouching">
-                        <img src="assets/model/outdoor/model-outdoor-06.jpeg" alt="Prasanna Devi low angle rooftop fashion" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Urban Edge</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-07.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Ledge Cityscape">
-                        <img src="assets/model/outdoor/model-outdoor-07.jpeg" alt="Prasanna Devi rooftop cityscape" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Skyline Horizon</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-08.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Kneeling Sky Frame">
-                        <img src="assets/model/outdoor/model-outdoor-08.jpeg" alt="Prasanna Devi sky frame shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Sky Frame</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-09.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Draped Blazer Full Body">
-                        <img src="assets/model/outdoor/model-outdoor-09.jpeg" alt="Prasanna Devi blazer draped full body" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Draped Elegance</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-10.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Ledge Relaxed Seated">
-                        <img src="assets/model/outdoor/model-outdoor-10.jpeg" alt="Prasanna Devi seated rooftop ledge" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">City Solitude</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-11.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Contemplative Pose">
-                        <img src="assets/model/outdoor/model-outdoor-11.jpeg" alt="Prasanna Devi contemplative outdoor portrait" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Contemplative</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="portfolio__item" data-category="outdoor" data-animate="fade-up">
-                    <a href="assets/model/outdoor/model-outdoor-12.jpeg" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Outdoor — Wide Rooftop Editorial">
-                        <img src="assets/model/outdoor/model-outdoor-12.jpeg" alt="Prasanna Devi wide rooftop shot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Outdoor</span>
-                            <h3 class="portfolio__item-title">Rooftop Editorial</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Traditional Waterfront -->
-                <div class="portfolio__item" data-category="jewellery" data-animate="fade-up">
-                    <a href="assets/model/traditional/model-traditional-05.webp" class="portfolio__item-inner glightbox" data-gallery="portfolio" data-description="Traditional — Black Saree Waterfront">
-                        <img src="assets/model/traditional/model-traditional-05.webp" alt="Prasanna Devi waterfront black saree shoot" class="portfolio__item-img" loading="lazy">
-                        <div class="portfolio__item-overlay">
-                            <span class="portfolio__item-category">Jewellery</span>
-                            <h3 class="portfolio__item-title">Waterfront Serenade</h3>
-                        </div>
-                    </a>
+                <!-- Card 6: Runway (Row 3 Right) -->
+                <div class="work-category-card work-category-card--runway" data-category="runway" role="button" tabindex="0" aria-label="Explore Runway Walks">
+                    <div class="work-category-card__media">
+                        <img src="assets/model/Runway/runway-01.png" alt="Prasanna Devi Runway and Catwalk" class="work-category-card__img" loading="lazy">
+                        <div class="work-category-card__overlay"></div>
+                    </div>
+                    <div class="work-category-card__badge-bar">
+                        <span class="work-category-card__tag">Runway</span>
+                        <span class="work-category-card__count">3 Shows</span>
+                    </div>
+                    <div class="work-category-card__content">
+                        <h3 class="work-category-card__title">Runway</h3>
+                        <p class="work-category-card__desc">Catwalk poise, high-energy fashion presentations & designer statement walks.</p>
+                        <span class="work-category-card__action">
+                            Explore Showcase
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            </div>
     </section>
 
-    <!-- ==================== MARQUEE ==================== -->
-    <div class="marquee" aria-hidden="true">
-        <div class="marquee__track">
-            <span class="marquee__item">Fashion</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Editorial</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Commercial</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Jewellery</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Beauty</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Runway</span>
-            <span class="marquee__separator">✦</span>
-            <!-- Duplicate for seamless loop -->
-            <span class="marquee__item">Fashion</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Editorial</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Commercial</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Jewellery</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Beauty</span>
-            <span class="marquee__separator">✦</span>
-            <span class="marquee__item">Runway</span>
-            <span class="marquee__separator">✦</span>
-        </div>
-    </div>
-
-    <!-- ==================== CAMPAIGNS ==================== -->
-    <section class="campaigns" id="campaigns" aria-label="Featured campaigns">
-        <div class="gradient-orb gradient-orb--gold" style="top: 30%; left: -10%;" aria-hidden="true"></div>
+    <!-- ==================== BRAND LABELS / COLLABORATIONS ==================== -->
+    <section class="brand-labels-section" id="brands" aria-label="Brand Labels and Featured Collaborations">
         <div class="container">
-            <div class="section-label" data-animate="fade-up">
-                <span class="section-number">03</span> Campaigns
-            </div>
-
-            <div class="campaigns__header">
-                <h2 class="campaigns__heading" data-animate="fade-up">Featured <em class="text-accent text-gold">Campaigns</em></h2>
-            </div>
-
-            <div class="campaigns__grid">
-                <div class="campaign-card" data-animate="fade-up">
-                    <div class="campaign-card__image-wrap">
-                        <img src="assets/model/traditional/model-traditional-01.webp" alt="MBJ Venkateswara Jewellers Campaign" class="campaign-card__image" loading="lazy">
-                    </div>
-                    <span class="campaign-card__brand">MBJ — Venkateswara Jewellers</span>
-                    <h3 class="campaign-card__title">Heritage Collection</h3>
-                    <p class="campaign-card__desc">Jewellery advertisement campaign for MBJ Venkateswara Jewellers, Krishnagiri. Showcasing traditional South Indian temple jewellery with contemporary styling.</p>
+            <div class="brand-labels__header" data-animate="fade-up">
+                <div class="section-label">
+                    <span class="section-number">05</span> Brand Labels
                 </div>
-
-                <div class="campaign-card" data-animate="fade-up">
-                    <div class="campaign-card__image-wrap">
-                        <img src="assets/model/closeups/model-closeup-02.webp" alt="ZCULT Fashion Campaign" class="campaign-card__image" loading="lazy">
-                    </div>
-                    <span class="campaign-card__brand">ZCULT</span>
-                    <h3 class="campaign-card__title">Fashion Forward</h3>
-                    <p class="campaign-card__desc">Fashion brand campaign for ZCULT, bringing contemporary Indian fashion to life through dynamic editorial imagery and bold styling.</p>
-                </div>
-
-                <div class="campaign-card" data-animate="fade-up">
-                    <div class="campaign-card__image-wrap">
-                        <img src="assets/model/outdoor/model-outdoor-07.jpeg" alt="Rooftop Urban Couture Campaign" class="campaign-card__image" loading="lazy">
-                    </div>
-                    <span class="campaign-card__brand">URBAN EDITORIAL</span>
-                    <h3 class="campaign-card__title">City Skyline Series</h3>
-                    <p class="campaign-card__desc">High-altitude urban streetwear campaign against the Chennai city skyline, blending structured tailoring with high-contrast editorial photography.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== VIDEO SHOWCASE (Cinematic Stills) ==================== -->
-    <section class="video-showcase" id="video-showcase" aria-label="Behind the scenes">
-        <div class="container">
-            <div class="section-label" data-animate="fade-up">
-                <span class="section-number">04</span> Behind the Lens
-            </div>
-
-            <div class="video-showcase__header">
-                <h2 data-animate="fade-up">Cinematic <em class="text-accent text-gold">Moments</em></h2>
+                <h3>Trusted <em class="text-accent text-gold">Collaborations</em></h3>
             </div>
         </div>
 
-        <div class="video-showcase__track" id="horizontal-scroll">
-            <div class="video-card" data-animate="fade-up">
-                <div class="video-card__visual">
-                    <img src="assets/model/studio/model-studio-05.webp" alt="Fashion concept shoot behind the scenes" class="video-card__img" loading="lazy">
-                    <div class="video-card__overlay">
-                        <div class="video-card__caption">
-                            <h3 class="video-card__title">Concept Shoot</h3>
-                            <span class="video-card__subtitle">Behind the Scenes</span>
-                        </div>
-                    </div>
+        <div class="marquee" aria-label="Featured Brands and Collaborations">
+            <div class="marquee__track">
+                <!-- Set 1 -->
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/malabar.png" alt="Malabar Gold & Diamonds" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-
-            <div class="video-card" data-animate="fade-up">
-                <div class="video-card__visual">
-                    <img src="assets/model/studio/model-studio-06.webp" alt="Fashion styling session" class="video-card__img" loading="lazy">
-                    <div class="video-card__overlay">
-                        <div class="video-card__caption">
-                            <h3 class="video-card__title">Styling Session</h3>
-                            <span class="video-card__subtitle">Fashion Film</span>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/bellavita.png" alt="Bella Vita Luxury" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-
-            <div class="video-card" data-animate="fade-up">
-                <div class="video-card__visual">
-                    <img src="assets/model/studio/model-studio-07.webp" alt="On set production" class="video-card__img" loading="lazy">
-                    <div class="video-card__overlay">
-                        <div class="video-card__caption">
-                            <h3 class="video-card__title">On Set</h3>
-                            <span class="video-card__subtitle">Production Day</span>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/z.png" alt="ZCULT" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-
-            <div class="video-card" data-animate="fade-up">
-                <div class="video-card__visual">
-                    <img src="assets/model/studio/model-studio-03.webp" alt="Creative direction shoot" class="video-card__img" loading="lazy">
-                    <div class="video-card__overlay">
-                        <div class="video-card__caption">
-                            <h3 class="video-card__title">Creative Direction</h3>
-                            <span class="video-card__subtitle">Editorial Process</span>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/m.png" alt="MBJ Venkateswara Jewellers" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-
-            <div class="video-card" data-animate="fade-up">
-                <div class="video-card__visual">
-                    <img src="assets/model/outdoor/model-outdoor-10.jpeg" alt="Rooftop direction session" class="video-card__img" loading="lazy">
-                    <div class="video-card__overlay">
-                        <div class="video-card__caption">
-                            <h3 class="video-card__title">Rooftop Direction</h3>
-                            <span class="video-card__subtitle">Urban Location Shoot</span>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/n.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-
-            <div class="video-card" data-animate="fade-up">
-                <div class="video-card__visual">
-                    <img src="assets/model/outdoor/model-outdoor-05.jpeg" alt="Urban streetwear styling" class="video-card__img" loading="lazy">
-                    <div class="video-card__overlay">
-                        <div class="video-card__caption">
-                            <h3 class="video-card__title">Urban Aesthetics</h3>
-                            <span class="video-card__subtitle">Streetwear Film</span>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/a.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== TIMELINE ==================== -->
-    <section class="timeline" id="timeline" aria-label="Career journey">
-        <div class="gradient-orb gradient-orb--cabernet" style="top: 10%; right: -10%;" aria-hidden="true"></div>
-        <div class="container container--narrow">
-            <div class="section-label" data-animate="fade-up">
-                <span class="section-number">05</span> Journey
-            </div>
-
-            <div class="timeline__header">
-                <h2 data-animate="fade-up">The <em class="text-accent text-gold">Journey</em></h2>
-            </div>
-
-            <div class="timeline__items">
-                <div class="timeline__line"></div>
-
-                <div class="timeline__item" data-animate="fade-up">
-                    <div class="timeline__year">2024</div>
-                    <div class="timeline__dot-container">
-                        <div class="timeline__dot"></div>
-                    </div>
-                    <div class="timeline__content">
-                        <div class="timeline__info">
-                            <span class="timeline__tag">Jewellery Campaign</span>
-                            <h3 class="timeline__title">MBJ Venkateswara Jewellers</h3>
-                            <p class="timeline__desc">Featured as the face of the Heritage Jewellery Collection for MBJ Venkateswara Jewellers, Krishnagiri — a campaign showcasing traditional South Indian temple jewellery.</p>
-                        </div>
-                        <div class="timeline__visual">
-                            <img src="assets/model/traditional/model-traditional-02.webp" alt="MBJ Venkateswara Jewellers heritage jewellery milestone showcase" loading="lazy">
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/malabar.png" alt="Malabar Gold & Diamonds" class="marquee__logo" loading="lazy">
                 </div>
-
-                <div class="timeline__item" data-animate="fade-up">
-                    <div class="timeline__year">2024</div>
-                    <div class="timeline__dot-container">
-                        <div class="timeline__dot"></div>
-                    </div>
-                    <div class="timeline__content">
-                        <div class="timeline__info">
-                            <span class="timeline__tag">Fashion Brand</span>
-                            <h3 class="timeline__title">ZCULT Fashion</h3>
-                            <p class="timeline__desc">Brand collaboration with ZCULT for their contemporary fashion line, bringing a fresh perspective to modern Indian streetwear and couture.</p>
-                        </div>
-                        <div class="timeline__visual">
-                            <img src="assets/model/fashion/model-fashion-01.webp" alt="ZCULT Fashion brand milestone shoot" loading="lazy">
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/bellavita.png" alt="Bella Vita Luxury" class="marquee__logo" loading="lazy">
                 </div>
-
-                <div class="timeline__item" data-animate="fade-up">
-                    <div class="timeline__year">2024</div>
-                    <div class="timeline__dot-container">
-                        <div class="timeline__dot"></div>
-                    </div>
-                    <div class="timeline__content">
-                        <div class="timeline__info">
-                            <span class="timeline__tag">Runway</span>
-                            <h3 class="timeline__title">Fashion Walk Debut</h3>
-                            <p class="timeline__desc">Made a striking runway debut, walking for emerging designers and established fashion houses at curated fashion events in Chennai.</p>
-                        </div>
-                        <div class="timeline__visual">
-                            <img src="assets/model/studio/model-studio-01.webp" alt="Striking runway debut milestone showcase" loading="lazy">
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/z.png" alt="ZCULT" class="marquee__logo" loading="lazy">
                 </div>
-
-                <div class="timeline__item" data-animate="fade-up">
-                    <div class="timeline__year">2025</div>
-                    <div class="timeline__dot-container">
-                        <div class="timeline__dot"></div>
-                    </div>
-                    <div class="timeline__content">
-                        <div class="timeline__info">
-                            <span class="timeline__tag">Beauty</span>
-                            <h3 class="timeline__title">Professional MUA Collaborations</h3>
-                            <p class="timeline__desc">Served as a muse for leading professional makeup artists, featured in beauty portfolios and MUA showcases across Tamil Nadu.</p>
-                        </div>
-                        <div class="timeline__visual">
-                            <img src="assets/model/studio/model-studio-04.webp" alt="Professional beauty MUA collaboration showcase" loading="lazy">
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/m.png" alt="MBJ Venkateswara Jewellers" class="marquee__logo" loading="lazy">
                 </div>
-
-                <div class="timeline__item" data-animate="fade-up">
-                    <div class="timeline__year">2025</div>
-                    <div class="timeline__dot-container">
-                        <div class="timeline__dot"></div>
-                    </div>
-                    <div class="timeline__content">
-                        <div class="timeline__info">
-                            <span class="timeline__tag">Editorial</span>
-                            <h3 class="timeline__title">Concept & Editorial Shoots</h3>
-                            <p class="timeline__desc">Collaborated with top photographers for concept-driven editorial shoots spanning diverse styles — from streetwear to traditional haute couture.</p>
-                        </div>
-                        <div class="timeline__visual">
-                            <img src="assets/model/studio/model-studio-02.webp" alt="Concept editorial shoot showcase" loading="lazy">
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/n.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
                 </div>
-
-                <div class="timeline__item" data-animate="fade-up">
-                    <div class="timeline__year">2025</div>
-                    <div class="timeline__dot-container">
-                        <div class="timeline__dot"></div>
-                    </div>
-                    <div class="timeline__content">
-                        <div class="timeline__info">
-                            <span class="timeline__tag">Urban Couture</span>
-                            <h3 class="timeline__title">Rooftop Streetwear Series</h3>
-                            <p class="timeline__desc">Conducted an expansive outdoor rooftop editorial series across Chennai skylines, showcasing versatile streetwear and high-concept urban aesthetics.</p>
-                        </div>
-                        <div class="timeline__visual">
-                            <img src="assets/model/outdoor/model-outdoor-12.jpeg" alt="Rooftop urban streetwear milestone showcase" loading="lazy">
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/a.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </section>
+                <span class="marquee__separator">✦</span>
 
-    <!-- ==================== MEASUREMENTS ==================== -->
-    <section class="measurements" id="measurements" aria-label="Model measurements">
-        <div class="container">
-            <div class="section-label" data-animate="fade-up">
-                <span class="section-number">06</span> Stats
-            </div>
-
-            <div class="measurements__header">
-                <h2 data-animate="fade-up">Model <em class="text-accent text-gold">Card</em></h2>
-                <div class="unit-toggle-wrap" data-animate="fade-up">
-                    <button class="unit-toggle-btn active" id="unit-toggle-imperial" aria-label="Switch to Imperial units">Imperial</button>
-                    <div class="unit-toggle-divider"></div>
-                    <button class="unit-toggle-btn" id="unit-toggle-metric" aria-label="Switch to Metric units">Metric</button>
+                <!-- Set 2 (Duplicate for seamless continuous loop) -->
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/malabar.png" alt="Malabar Gold & Diamonds" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-
-            <div class="measurements__layout">
-                <!-- Image column -->
-                <div class="measurements__image-col" data-animate="fade-up">
-                    <div class="measurements__image-frame">
-                        <img
-                            src="assets/model/traditional/model-traditional-02.webp"
-                            alt="Prasanna Devi — Model Profile"
-                            loading="lazy"
-                        >
-                        <div class="measurements__image-overlay">
-                            <button id="view-comp-card-btn" class="btn btn--glass btn--small">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:16px;height:16px;margin-right:8px;"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
-                                View Comp Card
-                            </button>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/bellavita.png" alt="Bella Vita Luxury" class="marquee__logo" loading="lazy">
                 </div>
-
-                <!-- Stats column -->
-                <div class="measurements__stats-col">
-                    <!-- Premium Body Measurements Cards -->
-                    <div class="mc-body-grid" data-animate="fade-up">
-                        <div class="mc-stat-card mc-stat-card--hero">
-                            <span class="mc-stat-card__label">Height</span>
-                            <div class="mc-stat-card__divider"></div>
-                            <span class="mc-stat-card__value" data-imperial="5'4&quot;" data-metric="163 cm">5'4"</span>
-                        </div>
-                        <div class="mc-stat-card">
-                            <span class="mc-stat-card__label">Bust</span>
-                            <div class="mc-stat-card__divider"></div>
-                            <span class="mc-stat-card__value" data-imperial="33&quot;" data-metric="84 cm">33"</span>
-                        </div>
-                        <div class="mc-stat-card">
-                            <span class="mc-stat-card__label">Waist</span>
-                            <div class="mc-stat-card__divider"></div>
-                            <span class="mc-stat-card__value" data-imperial="28&quot;" data-metric="71 cm">28"</span>
-                        </div>
-                        <div class="mc-stat-card">
-                            <span class="mc-stat-card__label">Hips</span>
-                            <div class="mc-stat-card__divider"></div>
-                            <span class="mc-stat-card__value" data-imperial="33&quot;" data-metric="84 cm">33"</span>
-                        </div>
-                        <div class="mc-stat-card">
-                            <span class="mc-stat-card__label">Weight</span>
-                            <div class="mc-stat-card__divider"></div>
-                            <span class="mc-stat-card__value" data-imperial="125 lbs" data-metric="57 kg">125 lbs</span>
-                        </div>
-                    </div>
-
-                    <!-- Decorative gold flourish -->
-                    <div class="mc-flourish" aria-hidden="true">
-                        <span class="mc-flourish__line"></span>
-                        <span class="mc-flourish__diamond">◆</span>
-                        <span class="mc-flourish__line"></span>
-                    </div>
-
-                    <!-- Attribute Detail Cards -->
-                    <div class="mc-attr-grid" data-animate="fade-up">
-                        <div class="mc-attr-card">
-                            <div class="mc-attr-card__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>
-                            </div>
-                            <span class="mc-attr-card__label">Skin Tone</span>
-                            <span class="mc-attr-card__value">Medium Fair</span>
-                        </div>
-                        <div class="mc-attr-card">
-                            <div class="mc-attr-card__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
-                            </div>
-                            <span class="mc-attr-card__label">Eye Color</span>
-                            <span class="mc-attr-card__value">Dark Brown</span>
-                        </div>
-                        <div class="mc-attr-card">
-                            <div class="mc-attr-card__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12z"/></svg>
-                            </div>
-                            <span class="mc-attr-card__label">Hair Color</span>
-                            <span class="mc-attr-card__value">Black</span>
-                        </div>
-                        <div class="mc-attr-card">
-                            <div class="mc-attr-card__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 18h4l3-8 2 8h4l3-8 2 8h2"/></svg>
-                            </div>
-                            <span class="mc-attr-card__label">Shoes</span>
-                            <span class="mc-attr-card__value" data-imperial="6.5 US" data-metric="37 EU">6.5 US</span>
-                        </div>
-                        <div class="mc-attr-card">
-                            <div class="mc-attr-card__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 2l4 6 4-6"/><path d="M6 8h12l-2 14H8L6 8z"/></svg>
-                            </div>
-                            <span class="mc-attr-card__label">Dress</span>
-                            <span class="mc-attr-card__value" data-imperial="4 US" data-metric="36 EU">4 US</span>
-                        </div>
-                        <div class="mc-attr-card">
-                            <div class="mc-attr-card__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <span class="mc-attr-card__label">Location</span>
-                            <span class="mc-attr-card__value">Chennai, India</span>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/z.png" alt="ZCULT" class="marquee__logo" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== TESTIMONIALS ==================== -->
-    <section class="testimonials" id="testimonials" aria-label="Testimonials">
-        <div class="gradient-orb gradient-orb--white" style="top: 50%; right: -15%;" aria-hidden="true"></div>
-        <div class="container">
-            <div class="section-label" data-animate="fade-up">
-                <span class="section-number">07</span> Words
-            </div>
-
-            <div class="testimonials__header">
-                <h2 data-animate="fade-up">Kind <em class="text-accent text-gold">Words</em></h2>
-            </div>
-
-            <div class="testimonials__split" data-animate="fade-up">
-                <!-- Left Side: Editorial Image Frame -->
-                <div class="testimonials__image-pane">
-                    <div class="testimonials__image-track">
-                        <div class="testimonials__image-item active" data-slide="0">
-                            <img src="assets/model/studio/model-studio-01.webp" alt="Editorial Fashion Shoot" loading="lazy">
-                        </div>
-                        <div class="testimonials__image-item" data-slide="1">
-                            <img src="assets/model/traditional/model-traditional-02.webp" alt="Luxury Jewellery Campaign" loading="lazy">
-                        </div>
-                        <div class="testimonials__image-item" data-slide="2">
-                            <img src="assets/model/studio/model-studio-04.webp" alt="Beauty Close-up Shoot" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="testimonials__image-decor">
-                        <span class="testimonials__decor-brand">PRASANNA DEVI</span>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/m.png" alt="MBJ Venkateswara Jewellers" class="marquee__logo" loading="lazy">
                 </div>
-
-                <!-- Right Side: Interactive Quote Showcase -->
-                <div class="testimonials__quote-pane">
-                    <div class="testimonials__quote-track">
-                        <!-- Slide 1 -->
-                        <div class="testimonials__quote-item active" data-slide="0">
-                            <div class="testimonials__quote-symbol" aria-hidden="true">“</div>
-                            <blockquote class="testimonials__quote-text">
-                                Prasanna has an incredible ability to embody emotion in front of the camera. Her presence transforms every frame into something truly cinematic.
-                            </blockquote>
-                            <div class="testimonials__quote-meta">
-                                <span class="testimonials__author">Studio Photographer</span>
-                                <span class="testimonials__role">Chennai Fashion Week</span>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="testimonials__quote-item" data-slide="1">
-                            <div class="testimonials__quote-symbol" aria-hidden="true">“</div>
-                            <blockquote class="testimonials__quote-text">
-                                Working with Prasanna was a dream. She understood the vision for our jewellery campaign instantly and brought a regal elegance that elevated the entire collection.
-                            </blockquote>
-                            <div class="testimonials__quote-meta">
-                                <span class="testimonials__author">MBJ Jewellers</span>
-                                <span class="testimonials__role">Brand Director</span>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="testimonials__quote-item" data-slide="2">
-                            <div class="testimonials__quote-symbol" aria-hidden="true">“</div>
-                            <blockquote class="testimonials__quote-text">
-                                As a makeup artist, Prasanna is the ideal muse. Her skin, bone structure, and expressiveness make her a canvas that brings any look to life.
-                            </blockquote>
-                            <div class="testimonials__quote-meta">
-                                <span class="testimonials__author">Professional MUA</span>
-                                <span class="testimonials__role">Beauty Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slider Controls -->
-                    <div class="testimonials__controls">
-                        <!-- Progress Info -->
-                        <div class="testimonials__progress">
-                            <span class="testimonials__progress-current">01</span>
-                            <div class="testimonials__progress-bar">
-                                <div class="testimonials__progress-line"></div>
-                            </div>
-                            <span class="testimonials__progress-total">03</span>
-                        </div>
-                        
-                        <!-- Navigation Actions -->
-                        <div class="testimonials__nav">
-                            <button class="testimonials__btn testimonials__btn--prev" aria-label="Previous slide">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <line x1="20" y1="12" x2="4" y2="12"></line>
-                                    <polyline points="10 18 4 12 10 6"></polyline>
-                                </svg>
-                            </button>
-                            <button class="testimonials__btn testimonials__btn--next" aria-label="Next slide">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                    <line x1="4" y1="12" x2="20" y2="12"></line>
-                                    <polyline points="14 6 20 12 14 18"></polyline>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/n.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
                 </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/a.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/malabar.png" alt="Malabar Gold & Diamonds" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/bellavita.png" alt="Bella Vita Luxury" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/z.png" alt="ZCULT" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/m.png" alt="MBJ Venkateswara Jewellers" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/n.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
+                <div class="marquee__item">
+                    <img src="assets/model/marquee/a.png" alt="Brand Partner" class="marquee__logo" loading="lazy">
+                </div>
+                <span class="marquee__separator">✦</span>
             </div>
         </div>
     </section>
@@ -1036,7 +630,7 @@
     <section class="instagram" id="instagram" aria-label="Instagram feed">
         <div class="container">
             <div class="section-label" data-animate="fade-up">
-                <span class="section-number">08</span> Instagram
+                <span class="section-number">06</span> Live Archive
             </div>
 
             <div class="instagram__header">
@@ -1048,7 +642,7 @@
                 <!-- Item 1: Tall -->
                 <div class="instagram__item instagram__item--tall" data-animate="fade-up">
                     <a href="#" class="instagram__item-inner" data-insta-id="0">
-                        <img src="assets/model/portraits/model-portrait-02.webp" alt="Editorial Fashion Shoot" class="instagram__item-img" loading="lazy">
+                        <img src="assets/model/editorial/editorial-05.jpeg" alt="Editorial Fashion Shoot" class="instagram__item-img" loading="lazy">
                         <div class="instagram__item-overlay">
                             <span class="instagram__item-frame"></span>
                             <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1059,7 +653,7 @@
                 <!-- Item 2: Square -->
                 <div class="instagram__item instagram__item--square" data-animate="fade-up">
                     <a href="#" class="instagram__item-inner" data-insta-id="1">
-                        <img src="assets/model/outdoor/model-outdoor-05.jpeg" alt="Urban Streetwear Shoot" class="instagram__item-img" loading="lazy">
+                        <img src="assets/model/fashion/fashion-05.jpeg" alt="Urban Streetwear Shoot" class="instagram__item-img" loading="lazy">
                         <div class="instagram__item-overlay">
                             <span class="instagram__item-frame"></span>
                             <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1070,7 +664,7 @@
                 <!-- Item 3: Tall -->
                 <div class="instagram__item instagram__item--tall" data-animate="fade-up">
                     <a href="#" class="instagram__item-inner" data-insta-id="2">
-                        <img src="assets/model/outdoor/model-outdoor-07.jpeg" alt="Rooftop Cityscape Shoot" class="instagram__item-img" loading="lazy">
+                        <img src="assets/model/Commercial/commercial-03.jpeg" alt="Rooftop Cityscape Shoot" class="instagram__item-img" loading="lazy">
                         <div class="instagram__item-overlay">
                             <span class="instagram__item-frame"></span>
                             <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1081,7 +675,7 @@
                 <!-- Item 4: Wide -->
                 <div class="instagram__item instagram__item--wide" data-animate="fade-up">
                     <a href="#" class="instagram__item-inner" data-insta-id="3">
-                        <img src="assets/model/traditional/model-traditional-04.webp" alt="Regal Jewellery Campaign" class="instagram__item-img" loading="lazy">
+                        <img src="assets/model/jwellery/jewellery-03.jpeg" alt="Regal Jewellery Campaign" class="instagram__item-img" loading="lazy">
                         <div class="instagram__item-overlay">
                             <span class="instagram__item-frame"></span>
                             <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1092,7 +686,7 @@
                 <!-- Item 5: Square -->
                 <div class="instagram__item instagram__item--square" data-animate="fade-up">
                     <a href="#" class="instagram__item-inner" data-insta-id="4">
-                        <img src="assets/model/studio/model-studio-07.webp" alt="Luxury Shoot Portrait" class="instagram__item-img" loading="lazy">
+                        <img src="assets/model/Runway/runway-02.jpeg" alt="Luxury Shoot Portrait" class="instagram__item-img" loading="lazy">
                         <div class="instagram__item-overlay">
                             <span class="instagram__item-frame"></span>
                             <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1103,7 +697,7 @@
                 <!-- Item 6: Tall -->
                 <div class="instagram__item instagram__item--tall" data-animate="fade-up">
                     <a href="#" class="instagram__item-inner" data-insta-id="5">
-                        <img src="assets/model/studio/model-studio-03.webp" alt="Couture Runway Portrait" class="instagram__item-img" loading="lazy">
+                        <img src="assets/model/editorial/editorial-06.jpeg" alt="Couture Runway Portrait" class="instagram__item-img" loading="lazy">
                         <div class="instagram__item-overlay">
                             <span class="instagram__item-frame"></span>
                             <svg class="instagram__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -1134,7 +728,7 @@
         <div class="gradient-orb gradient-orb--cherry" style="bottom: 20%; right: -10%;" aria-hidden="true"></div>
         <div class="container">
             <div class="section-label" data-animate="fade-up">
-                <span class="section-number">09</span> Booking
+                <span class="section-number">07</span> Casting &amp; Bookings
             </div>
 
             <div class="booking__inner">
@@ -1145,8 +739,8 @@
                     <p class="booking__text" data-animate="fade-up">
                         Available for fashion editorials, commercial campaigns, jewellery advertisements, runway shows, brand collaborations, and beauty shoots. Based in Chennai, open to travel nationally and internationally.
                     </p>
-                    <a href="mailto:prasannadevithambidurai@gmail.com" class="btn btn--primary magnetic-wrap" data-animate="fade-up">
-                        Book Now
+                    <a href="https://www.instagram.com/prasannadevi_thambidurai/" class="btn btn--primary magnetic-wrap" data-animate="fade-up">
+                        Let's Work Together
                         <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -1159,7 +753,7 @@
                             <svg class="booking__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                             <div>
                                 <div class="booking__info-label">Email</div>
-                                <div class="booking__info-value"><a href="mailto:prasannadevithambidurai@gmail.com">prasannadevithambidurai@gmail.com</a></div>
+                                <div class="booking__info-value"><a href="https://mail.google.com/mail/?view=cm&to=prasannadevithambidurai@gmail.com" target="_blank" rel="noopener noreferrer">prasannadevithambidurai@gmail.com</a></div>
                             </div>
                         </div>
 
@@ -1182,10 +776,10 @@
 
                     <div class="booking__availability">
                         <span class="booking__availability-dot" aria-hidden="true"></span>
-                        <span class="booking__availability-text">Available for bookings</span>
+                        <span class="booking__availability-text">Available for Shoots</span>
                     </div>
 
-                    <a href="mailto:prasannadevithambidurai@gmail.com" class="btn btn--glass" style="width:100%; justify-content:center;">
+                    <a href="https://mail.google.com/mail/?view=cm&to=prasannadevithambidurai@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn--glass" style="width:100%; justify-content:center;">
                         Send Inquiry
                     </a>
                 </div>
@@ -1203,7 +797,7 @@
                     <a href="https://www.instagram.com/prasannadevi_thambidurai/" target="_blank" rel="noopener noreferrer" class="footer__social magnetic-wrap" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
                     </a>
-                    <a href="mailto:prasannadevithambidurai@gmail.com" class="footer__social magnetic-wrap" aria-label="Email">
+                    <a href="https://mail.google.com/mail/?view=cm&to=prasannadevithambidurai@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__social magnetic-wrap" aria-label="Email">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     </a>
                 </div>
@@ -1221,6 +815,40 @@
         </div>
     </footer>
 
+    <!-- ==================== SHOOT VIDEO LIGHTBOX MODAL ==================== -->
+    <div class="shoot-modal" id="shoot-modal" role="dialog" aria-modal="true" aria-label="Shoot preview">
+        <div class="shoot-modal__backdrop" id="shoot-modal-backdrop"></div>
+        <div class="shoot-modal__content">
+            <button class="shoot-modal__close" id="shoot-modal-close" aria-label="Close shoot preview">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="shoot-modal__video-wrap" id="shoot-modal-video-wrap"></div>
+            <div class="shoot-modal__info" id="shoot-modal-info">
+                <h3 class="shoot-modal__title" id="shoot-modal-title"></h3>
+                <div class="shoot-modal__location" id="shoot-modal-location">
+                    <svg class="shoot-modal__location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span id="shoot-modal-location-text"></span>
+                </div>
+                <p class="shoot-modal__description" id="shoot-modal-description"></p>
+                <div class="shoot-modal__date" id="shoot-modal-date-wrap">
+                    <svg class="shoot-modal__date-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span id="shoot-modal-date"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ==================== COMP CARD MODAL ==================== -->
     <div class="modal" id="comp-card-modal" role="dialog" aria-modal="true" aria-label="Model Composite Card">
         <div class="modal__backdrop" id="comp-card-modal-backdrop"></div>
@@ -1233,7 +861,7 @@
                 <!-- Side A: Main Profile -->
                 <div class="comp-card__side comp-card__side--front">
                     <div class="comp-card__image-hero">
-                        <img src="assets/model/traditional/model-traditional-02.webp" alt="Prasanna Devi Portrait">
+                        <img src="assets/model/jwellery/jewellery-04.jpeg" alt="Prasanna Devi Portrait">
                     </div>
                     <div class="comp-card__info">
                         <h3 class="comp-card__name">Prasanna Devi</h3>
@@ -1252,10 +880,10 @@
                             <img src="assets/model/editorial/model-editorial-01.webp" alt="Portfolio Image 1">
                         </div>
                         <div class="comp-card__gallery-img">
-                            <img src="assets/model/traditional/model-traditional-04.webp" alt="Portfolio Image 2">
+                            <img src="assets/model/jwellery/jewellery-05.jpeg" alt="Portfolio Image 2">
                         </div>
                         <div class="comp-card__gallery-img">
-                            <img src="assets/model/studio/model-studio-01.webp" alt="Portfolio Image 3">
+                            <img src="assets/model/fashion/fashion-06.jpeg" alt="Portfolio Image 3">
                         </div>
                     </div>
                     
@@ -1349,6 +977,98 @@
         </div>
     </div>
 
+    <!-- ==================== HAUTE LOOKBOOK THEATER (SELECTED DISCIPLINES SHOWCASE) ==================== -->
+    <div class="lookbook-modal" id="lookbook-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Haute Lookbook Theater">
+        <div class="lookbook-modal__backdrop" id="lookbook-modal-backdrop"></div>
+        <div class="lookbook-modal__container">
+            <!-- Header bar with Category Switcher and Counter -->
+            <header class="lookbook-modal__header">
+                <div class="lookbook-header__left">
+                    <span class="lookbook-header__badge" id="lookbook-badge">DISCIPLINE SHOWCASE</span>
+                    <h3 class="lookbook-header__title" id="lookbook-category-title">Commercial Campaigns</h3>
+                </div>
+
+                <nav class="lookbook-switcher" aria-label="Discipline Switcher">
+                    <button class="lookbook-switch-btn active" data-category="commercial">Commercial</button>
+                    <button class="lookbook-switch-btn" data-category="fashion">Fashion</button>
+                    <button class="lookbook-switch-btn" data-category="editorial">Editorial</button>
+                    <button class="lookbook-switch-btn" data-category="jwellery">Jewellery</button>
+                    <button class="lookbook-switch-btn" data-category="beauty">Beauty</button>
+                    <button class="lookbook-switch-btn" data-category="runway">Runway</button>
+                </nav>
+
+                <div class="lookbook-header__right">
+                    <span class="lookbook-header__counter" id="lookbook-counter">01 / 06</span>
+                    <button class="lookbook-modal__close" id="lookbook-modal-close" aria-label="Close Showcase">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Main Theater Body -->
+            <div class="lookbook-modal__body">
+                <!-- Large Center Stage -->
+                <div class="lookbook-modal__stage">
+                    <button class="lookbook-nav-btn lookbook-nav-btn--prev" id="lookbook-btn-prev" aria-label="Previous look">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+
+                    <div class="lookbook-modal__viewer">
+                        <img id="lookbook-hero-img" class="lookbook-hero-img" src="assets/model/Commercial/Malabar gold and diamonds promotion.jpeg" alt="Selected Discipline Showcase Look" />
+                    </div>
+
+                    <button class="lookbook-nav-btn lookbook-nav-btn--next" id="lookbook-btn-next" aria-label="Next look">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                </div>
+
+                <!-- Editorial HUD Panel -->
+                <aside class="lookbook-modal__hud" id="lookbook-hud" aria-label="Editorial Details">
+                    <div class="lookbook-hud__top">
+                        <span class="lookbook-hud__tag" id="lookbook-hud-tag">COMMERCIAL CAMPAIGN · CHENNAI</span>
+                        <h4 class="lookbook-hud__title" id="lookbook-hud-title">Malabar Gold &amp; Diamonds Campaign</h4>
+                        <div class="lookbook-hud__divider"></div>
+                        <p class="lookbook-hud__desc" id="lookbook-hud-desc">
+                            Lead campaign visual for Malabar Gold &amp; Diamonds, showcasing luxury jewellery poise and high-profile brand presence.
+                        </p>
+
+
+                        <div class="lookbook-hud__spec">
+                            <div class="lookbook-spec-item">
+                                <span class="lookbook-spec-label">Height</span>
+                                <span class="lookbook-spec-val">5'4"</span>
+                            </div>
+                            <div class="lookbook-spec-item">
+                                <span class="lookbook-spec-label">B-W-H</span>
+                                <span class="lookbook-spec-val">33-28-33</span>
+                            </div>
+                            <div class="lookbook-spec-item">
+                                <span class="lookbook-spec-label">Shoe</span>
+                                <span class="lookbook-spec-val">8 US</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lookbook-hud__actions">
+                        <a id="lookbook-zoom-btn" href="assets/model/Commercial/Malabar gold and diamonds promotion.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn--glass btn--small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:15px;height:15px;margin-right:6px;"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                            View Full Resolution
+                        </a>
+                        <a href="https://www.instagram.com/prasannadevi_thambidurai/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small lookbook-book-btn">
+                            Let's Work Together
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:15px;height:15px;margin-left:6px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Bottom Filmstrip Reel -->
+            <div class="lookbook-modal__filmstrip-wrap">
+                <div class="lookbook-filmstrip" id="lookbook-filmstrip" role="tablist" aria-label="Thumbnail filmstrip"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- ==================== SCRIPTS ==================== -->
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -1376,6 +1096,10 @@
     <script src="js/navigation.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/gsap.js"></script>
+    <script src="js/mediaStorage.js"></script>
+    <script src="js/shoot-modal.js"></script>
+    <script src="js/shoot-map.js"></script>
+    <script src="js/discipline-showcase.js"></script>
     <script src="js/app.js"></script>
 
     <!-- Fallback: reveal all elements if GSAP fails to load from CDN -->

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — Shoot Manager | Prasanna Devi</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Prasanna Devi">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <!-- ==================== ADMIN DASHBOARD ==================== -->
+    <div class="admin" id="admin-dashboard">
+
+        <!-- Header -->
+        <header class="admin__header">
+            <div class="admin__header-inner">
+                <div class="admin__brand">
+                    <span class="admin__brand-monogram">PD</span>
+                    <span class="admin__brand-text">Shoot Manager</span>
+                </div>
+                <div class="admin__header-actions">
+                    <button class="admin__btn admin__btn--ghost" id="btn-export" title="Export data as JSON">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Export
+                    </button>
+                    <label class="admin__btn admin__btn--ghost" title="Import JSON data">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        Import
+                        <input type="file" accept=".json" id="btn-import" style="display:none;">
+                    </label>
+                    <a href="portfolio.html" class="admin__btn admin__btn--ghost" target="_blank">View Site</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="admin__main">
+            <div class="admin__container">
+
+                <!-- Stats Bar -->
+                <div class="admin__stats">
+                    <div class="admin__stat">
+                        <span class="admin__stat-number" id="stat-total">0</span>
+                        <span class="admin__stat-label">Total Shoots</span>
+                    </div>
+                    <div class="admin__stat">
+                        <span class="admin__stat-number" id="stat-active">0</span>
+                        <span class="admin__stat-label">Active</span>
+                    </div>
+                    <div class="admin__stat">
+                        <span class="admin__stat-number" id="stat-states">0</span>
+                        <span class="admin__stat-label">States</span>
+                    </div>
+                </div>
+
+                <!-- Add Shoot Button -->
+                <div class="admin__toolbar">
+                    <h2 class="admin__section-title">Shoot Locations</h2>
+                    <button class="admin__btn admin__btn--primary" id="btn-add-shoot">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add New Shoot
+                    </button>
+                </div>
+
+                <!-- Shoots List -->
+                <div class="admin__list" id="shoots-list">
+                    <!-- Rendered by admin.js -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ==================== SHOOT FORM MODAL ==================== -->
+    <div class="admin-modal" id="shoot-form-modal">
+        <div class="admin-modal__backdrop" id="shoot-form-backdrop"></div>
+        <div class="admin-modal__content">
+            <div class="admin-modal__header">
+                <h3 class="admin-modal__title" id="form-modal-title">Add New Shoot</h3>
+                <button class="admin-modal__close" id="form-modal-close" aria-label="Close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+
+            <form class="admin-form" id="shoot-form" novalidate>
+                <input type="hidden" id="form-id">
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group admin-form__group--full">
+                        <label class="admin-form__label" for="form-title">Shoot Title <span class="required">*</span></label>
+                        <input type="text" class="admin-form__input" id="form-title" required placeholder="e.g. Chennai Fashion Editorial">
+                    </div>
+                </div>
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group">
+                        <label class="admin-form__label" for="form-state">State <span class="required">*</span></label>
+                        <select class="admin-form__input admin-form__select" id="form-state" required>
+                            <option value="">Select state</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Puducherry">Puducherry</option>
+                        </select>
+                    </div>
+                    <div class="admin-form__group">
+                        <label class="admin-form__label" for="form-city">City <span class="required">*</span></label>
+                        <input type="text" class="admin-form__input" id="form-city" required placeholder="e.g. Chennai">
+                    </div>
+                </div>
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group">
+                        <label class="admin-form__label" for="form-latitude">Latitude <span class="required">*</span></label>
+                        <input type="number" class="admin-form__input" id="form-latitude" required step="0.0001" min="7" max="20" placeholder="e.g. 13.0827">
+                    </div>
+                    <div class="admin-form__group">
+                        <label class="admin-form__label" for="form-longitude">Longitude <span class="required">*</span></label>
+                        <input type="number" class="admin-form__input" id="form-longitude" required step="0.0001" min="73" max="86" placeholder="e.g. 80.2707">
+                    </div>
+                </div>
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group admin-form__group--full">
+                        <label class="admin-form__label" for="form-description">Description</label>
+                        <textarea class="admin-form__input admin-form__textarea" id="form-description" rows="3" placeholder="Brief description of the shoot..."></textarea>
+                    </div>
+                </div>
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group">
+                        <label class="admin-form__label" for="form-shootdate">Shoot Date</label>
+                        <input type="date" class="admin-form__input" id="form-shootdate">
+                    </div>
+                    <div class="admin-form__group">
+                        <label class="admin-form__label" for="form-active">Status</label>
+                        <div class="admin-form__toggle-wrap">
+                            <label class="admin-form__toggle">
+                                <input type="checkbox" id="form-active" checked>
+                                <span class="admin-form__toggle-slider"></span>
+                            </label>
+                            <span class="admin-form__toggle-label" id="form-active-label">Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group admin-form__group--full">
+                        <label class="admin-form__label">Shoot Video</label>
+                        <div class="admin-form__upload-wrap">
+                            <label class="admin-form__upload-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                                Choose Video
+                                <input type="file" accept="video/*" id="form-videofile" style="display:none;">
+                            </label>
+                            <span class="admin-form__upload-name" id="form-videofile-name">No file chosen</span>
+                        </div>
+                        <input type="text" class="admin-form__input" id="form-videourl" placeholder="Or paste video URL (e.g. https://...)" style="margin-top: 0.5rem;">
+                    </div>
+                </div>
+
+                <div class="admin-form__row">
+                    <div class="admin-form__group admin-form__group--full">
+                        <label class="admin-form__label">Thumbnail Image</label>
+                        <div class="admin-form__upload-wrap">
+                            <label class="admin-form__upload-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                Choose Image
+                                <input type="file" accept="image/*" id="form-thumbfile" style="display:none;">
+                            </label>
+                            <span class="admin-form__upload-name" id="form-thumbfile-name">No file chosen</span>
+                        </div>
+                        <input type="text" class="admin-form__input" id="form-thumbnailurl" placeholder="Or paste image URL (e.g. https://...)" style="margin-top: 0.5rem;">
+                        <div class="admin-form__preview" id="form-thumb-preview" style="display:none;">
+                            <img id="form-thumb-preview-img" alt="Thumbnail preview" style="max-width:200px; max-height:120px; border-radius:6px; margin-top:0.5rem; border:1px solid rgba(255,255,255,0.08);">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-form__actions">
+                    <button type="button" class="admin__btn admin__btn--ghost" id="form-cancel">Cancel</button>
+                    <button type="submit" class="admin__btn admin__btn--primary" id="form-submit">Save Shoot</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== DELETE CONFIRM MODAL ==================== -->
+    <div class="admin-modal" id="delete-confirm-modal">
+        <div class="admin-modal__backdrop" id="delete-confirm-backdrop"></div>
+        <div class="admin-modal__content admin-modal__content--small">
+            <h3 class="admin-modal__title">Delete Shoot</h3>
+            <p class="admin-modal__desc" id="delete-confirm-text">Are you sure you want to delete this shoot?</p>
+            <div class="admin-modal__actions">
+                <button class="admin__btn admin__btn--ghost" id="delete-cancel">Cancel</button>
+                <button class="admin__btn admin__btn--danger" id="delete-confirm">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="admin-toast" id="admin-toast" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="js/mediaStorage.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

@@ -20,6 +20,8 @@
     let outerX = 0, outerY = 0;
     let isHovering = false;
     let isGallery = false;
+    let isNav = false;
+    let isDrag = false;
 
     /* Track mouse position */
     document.addEventListener('mousemove', (e) => {
@@ -42,16 +44,50 @@
 
         if (isHovering) {
             cursorOuter.style.transform = `translate(${outerX - 40}px, ${outerY - 40}px)`;
-        }
-
-        if (isGallery) {
+        } else if (isGallery) {
             cursorOuter.style.transform = `translate(${outerX - 60}px, ${outerY - 60}px)`;
+        } else if (isNav) {
+            cursorOuter.style.transform = `translate(${outerX - 45}px, ${outerY - 45}px)`;
+        } else if (isDrag) {
+            cursorOuter.style.transform = `translate(${outerX - 35}px, ${outerY - 35}px)`;
         }
 
         requestAnimationFrame(animateCursor);
     }
 
     animateCursor();
+
+    /* Expose Luxury Cursor Controller for Theatre & Gallery */
+    window.luxuryCursor = {
+        setNav: function(label) {
+            isNav = true;
+            isHovering = false;
+            isGallery = false;
+            cursor.classList.add('cursor--nav');
+            cursor.classList.remove('cursor--hover', 'cursor--gallery');
+            if (cursorLabel) cursorLabel.textContent = label || 'NEXT';
+        },
+        clearNav: function() {
+            if (!isNav) return;
+            isNav = false;
+            cursor.classList.remove('cursor--nav');
+            if (cursorLabel) cursorLabel.textContent = '';
+        },
+        setDrag: function(active) {
+            isDrag = !!active;
+            if (active) {
+                cursor.classList.add('cursor--dragging');
+                if (cursorLabel) cursorLabel.textContent = 'DRAG';
+            } else {
+                cursor.classList.remove('cursor--dragging');
+                if (isNav && cursorLabel) {
+                    // restore nav label if still in nav zone
+                } else if (cursorLabel) {
+                    cursorLabel.textContent = '';
+                }
+            }
+        }
+    };
 
     /* Interactive elements */
     function addHoverListeners() {

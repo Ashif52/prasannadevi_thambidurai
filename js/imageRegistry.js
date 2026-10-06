@@ -5,90 +5,19 @@
 
 export const imageRegistry = {
     model: {
-        studio: [
+        hero: [
             {
-                id: "model_studio_01",
-                title: "Dark Glamour Editorial",
+                id: "model_hero",
+                title: "Hero Portrait",
                 category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-01.webp",
+                subcategory: "Hero",
+                path: "assets/model/hero.jpg",
+                pathWebp: "assets/model/hero.webp",
                 orientation: "portrait",
                 featured: true,
-                usedIn: ["Hero", "Gallery", "Milestones"],
+                usedIn: ["Hero", "OG Image", "Twitter Card"],
                 priority: 5,
-                tags: ["studio", "black-dress", "gold-glitter", "editorial"]
-            },
-            {
-                id: "model_studio_02",
-                title: "Clean Studio Headshot",
-                category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-02.webp",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["Gateway", "Hero", "Milestones"],
-                priority: 5,
-                tags: ["studio", "white-top", "direct-gaze", "clean"]
-            },
-            {
-                id: "model_studio_03",
-                title: "Casual Full Body Pose",
-                category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-03.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery", "Video Cards"],
-                priority: 4,
-                tags: ["studio", "casual", "full-body", "khaki-pants"]
-            },
-            {
-                id: "model_studio_04",
-                title: "Expressive Crop Top Shoot",
-                category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-04.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery", "Milestones"],
-                priority: 4,
-                tags: ["studio", "expressive", "crop-top", "moody"]
-            },
-            {
-                id: "model_studio_05",
-                title: "Red Chair Studio Pose I",
-                category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-05.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery", "Video Cards", "Instagram"],
-                priority: 4,
-                tags: ["studio", "red-chair", "seated", "fashion"]
-            },
-            {
-                id: "model_studio_06",
-                title: "Red Chair Studio Pose II",
-                category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-06.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Video Cards", "Instagram"],
-                priority: 4,
-                tags: ["studio", "red-chair", "seated", "watch"]
-            },
-            {
-                id: "model_studio_07",
-                title: "Red Chair Confident Pose",
-                category: "Model",
-                subcategory: "Studio",
-                path: "assets/model/studio/model-studio-07.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Video Cards", "Instagram"],
-                priority: 4,
-                tags: ["studio", "red-chair", "seated", "confident"]
+                tags: ["hero", "portrait", "featured"]
             }
         ],
         editorial: [
@@ -100,329 +29,435 @@ export const imageRegistry = {
                 path: "assets/model/editorial/model-editorial-01.webp",
                 orientation: "landscape",
                 featured: true,
-                usedIn: ["Gallery", "Bharatanatyam BG"],
+                usedIn: ["Gallery", "Comp Card"],
                 priority: 5,
                 tags: ["editorial", "emerald-necklace", "gold-gown", "high-fashion"]
+            },
+            {
+                id: "model_editorial_02",
+                title: "Editorial Look II",
+                category: "Model",
+                subcategory: "Editorial",
+                path: "assets/model/editorial/editorial-02.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["About", "Gallery"],
+                priority: 5,
+                tags: ["editorial", "portrait", "fashion"]
+            },
+            {
+                id: "model_editorial_03",
+                title: "Editorial Look III",
+                category: "Model",
+                subcategory: "Editorial",
+                path: "assets/model/editorial/editorial-03.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Video Cards"],
+                priority: 4,
+                tags: ["editorial", "creative", "direction"]
+            },
+            {
+                id: "model_editorial_04",
+                title: "Editorial Look IV",
+                category: "Model",
+                subcategory: "Editorial",
+                path: "assets/model/editorial/editorial-04.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery"],
+                priority: 4,
+                tags: ["editorial", "concept", "fashion"]
+            },
+            {
+                id: "model_editorial_05",
+                title: "Editorial Look V",
+                category: "Model",
+                subcategory: "Editorial",
+                path: "assets/model/editorial/editorial-05.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Instagram"],
+                priority: 5,
+                tags: ["editorial", "glamour", "portrait"]
+            },
+            {
+                id: "model_editorial_06",
+                title: "Editorial Look VI",
+                category: "Model",
+                subcategory: "Editorial",
+                path: "assets/model/editorial/editorial-06.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Instagram"],
+                priority: 4,
+                tags: ["editorial", "couture", "portrait"]
+            },
+            {
+                id: "model_editorial_07",
+                title: "Editorial Look VII",
+                category: "Model",
+                subcategory: "Editorial",
+                path: "assets/model/editorial/editorial-07.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery"],
+                priority: 4,
+                tags: ["editorial", "styling", "creative"]
             }
         ],
         fashion: [
             {
                 id: "model_fashion_01",
-                title: "Sequin Gown Studio Concept",
+                title: "Fashion Look I",
                 category: "Model",
                 subcategory: "Fashion",
-                path: "assets/model/fashion/model-fashion-01.webp",
+                path: "assets/model/fashion/fashion-01.jpeg",
                 orientation: "portrait",
                 featured: true,
-                usedIn: ["Gallery", "Milestones"],
+                usedIn: ["Gallery", "Campaigns"],
                 priority: 5,
-                tags: ["fashion", "sequin-gown", "macrame", "glamour"]
+                tags: ["fashion", "styling", "glamour"]
             },
             {
                 id: "model_fashion_02",
-                title: "Red & Dark Couture Walk",
+                title: "Fashion Look II",
                 category: "Model",
                 subcategory: "Fashion",
-                path: "assets/model/fashion/model-fashion-02.webp",
+                path: "assets/model/fashion/fashion-02.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Video Cards"],
+                priority: 5,
+                tags: ["fashion", "concept", "shoot"]
+            },
+            {
+                id: "model_fashion_03",
+                title: "Fashion Look III",
+                category: "Model",
+                subcategory: "Fashion",
+                path: "assets/model/fashion/fashion-03.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Video Cards"],
+                priority: 4,
+                tags: ["fashion", "styling", "session"]
+            },
+            {
+                id: "model_fashion_04",
+                title: "Fashion Look IV",
+                category: "Model",
+                subcategory: "Fashion",
+                path: "assets/model/fashion/fashion-04.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Video Cards"],
+                priority: 4,
+                tags: ["fashion", "production", "set"]
+            },
+            {
+                id: "model_fashion_05",
+                title: "Fashion Look V",
+                category: "Model",
+                subcategory: "Fashion",
+                path: "assets/model/fashion/fashion-05.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Instagram"],
+                priority: 4,
+                tags: ["fashion", "urban", "streetwear"]
+            },
+            {
+                id: "model_fashion_06",
+                title: "Fashion Look VI",
+                category: "Model",
+                subcategory: "Fashion",
+                path: "assets/model/fashion/fashion-06.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Comp Card"],
+                priority: 4,
+                tags: ["fashion", "couture", "creative"]
+            },
+            {
+                id: "model_fashion_07",
+                title: "Fashion Look VII",
+                category: "Model",
+                subcategory: "Fashion",
+                path: "assets/model/fashion/fashion-07.jpeg",
                 orientation: "portrait",
                 featured: false,
                 usedIn: ["Gallery"],
                 priority: 3,
-                tags: ["fashion", "red-gown", "dramatic", "couture"]
-            }
-        ],
-        portraits: [
-            {
-                id: "model_portrait_01",
-                title: "Soft Natural Studio Portrait",
-                category: "Model",
-                subcategory: "Portraits",
-                path: "assets/model/portraits/model-portrait-01.webp",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["About"],
-                priority: 5,
-                tags: ["portrait", "soft-smile", "natural", "gold-belt"]
+                tags: ["fashion", "editorial", "pose"]
             },
             {
-                id: "model_portrait_02",
-                title: "Black Saree Temple Jhumka Closeup",
+                id: "model_fashion_08",
+                title: "Fashion Look VIII",
                 category: "Model",
-                subcategory: "Portraits",
-                path: "assets/model/portraits/model-portrait-02.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Instagram"],
-                priority: 4,
-                tags: ["portrait", "black-saree", "jhumka", "traditional-closeup"]
-            }
-        ],
-        traditional: [
-            {
-                id: "model_traditional_01",
-                title: "Temple Statue Silk Saree",
-                category: "Model",
-                subcategory: "Traditional",
-                path: "assets/model/traditional/model-traditional-01.webp",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["Gallery", "Campaign Cards"],
-                priority: 5,
-                tags: ["traditional", "silk-saree", "temple-statue", "heritage"]
-            },
-            {
-                id: "model_traditional_02",
-                title: "Regal Gold Jewellery Shoot",
-                category: "Model",
-                subcategory: "Traditional",
-                path: "assets/model/traditional/model-traditional-02.webp",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["Model Card", "Gallery", "Milestones", "Comp Card"],
-                priority: 5,
-                tags: ["traditional", "gold-jewellery", "maang-tikka", "regal"]
-            },
-            {
-                id: "model_traditional_03",
-                title: "Sunflower Hair Batik Saree",
-                category: "Model",
-                subcategory: "Traditional",
-                path: "assets/model/traditional/model-traditional-03.webp",
+                subcategory: "Fashion",
+                path: "assets/model/fashion/fashion-08.jpeg",
                 orientation: "portrait",
                 featured: false,
                 usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["traditional", "batik-saree", "sunflower", "outdoor-night"]
+                priority: 3,
+                tags: ["fashion", "full-body", "styling"]
+            }
+        ],
+        commercial: [
+            {
+                id: "model_commercial_01",
+                title: "Malabar Gold & Diamonds Campaign",
+                category: "Model",
+                subcategory: "Commercial",
+                path: "assets/model/Commercial/Malabar gold and diamonds promotion.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Campaigns"],
+                priority: 5,
+                tags: ["commercial", "campaign", "malabar", "jewellery"]
             },
             {
-                id: "model_traditional_04",
-                title: "Kanchipuram Silk Steps Shoot",
+                id: "model_commercial_02",
+                title: "Malabar Gold Grand Stairs",
                 category: "Model",
-                subcategory: "Traditional",
-                path: "assets/model/traditional/model-traditional-04.webp",
+                subcategory: "Commercial",
+                path: "assets/model/Commercial/Malabar gold and diamonds promotion Stairs.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Video Cards"],
+                priority: 5,
+                tags: ["commercial", "stairs", "palace", "luxury"]
+            },
+            {
+                id: "model_commercial_03",
+                title: "Nimali — House of Naidu Hall",
+                category: "Model",
+                subcategory: "Commercial",
+                path: "assets/model/Commercial/Nimali- house of naidu hall promotion.jpeg",
                 orientation: "portrait",
                 featured: true,
                 usedIn: ["Gallery", "Instagram"],
                 priority: 5,
-                tags: ["traditional", "kanchipuram-saree", "temple-steps", "heavy-jewellery"]
+                tags: ["commercial", "nimali", "couture", "retail"]
             },
             {
-                id: "model_traditional_05",
-                title: "Waterfront Black Saree Portrait",
+                id: "model_commercial_04",
+                title: "Annachy App Campaign",
                 category: "Model",
-                subcategory: "Traditional",
-                path: "assets/model/traditional/model-traditional-05.webp",
+                subcategory: "Commercial",
+                path: "assets/model/Commercial/annachy app - by super saravana stores promotion.jpeg",
                 orientation: "portrait",
                 featured: false,
-                usedIn: [],
+                usedIn: ["Gallery"],
                 priority: 4,
-                tags: ["traditional", "black-saree", "waterfront", "outdoor"]
+                tags: ["commercial", "annachy", "app", "super-saravana"]
+            },
+            {
+                id: "model_commercial_05",
+                title: "Festive Market Brand Story",
+                category: "Model",
+                subcategory: "Commercial",
+                path: "assets/model/Commercial/Maroon Saree at the Festive Market.png",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery"],
+                priority: 4,
+                tags: ["commercial", "festive", "saree", "culture"]
             }
         ],
-        outdoor: [
+        runway: [
             {
-                id: "model_outdoor_01",
-                title: "Field Vest & Stool Editorial",
+                id: "model_runway_01",
+                title: "Runway Walk I",
                 category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-01.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["outdoor", "field", "brown-vest", "stool"]
-            },
-            {
-                id: "model_outdoor_02",
-                title: "Field Vintage Camera Prop",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-02.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["outdoor", "field", "camera-prop", "vintage"]
-            },
-            {
-                id: "model_outdoor_03",
-                title: "Rooftop Railing Lean Streetwear",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-03.webp",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["outdoor", "rooftop", "streetwear", "urban"]
-            },
-            {
-                id: "model_outdoor_04",
-                title: "Rooftop Red Blazer Overhead",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-04.webp",
+                subcategory: "Runway",
+                path: "assets/model/Runway/runway-01.png",
                 orientation: "portrait",
                 featured: true,
-                usedIn: ["Gallery"],
+                usedIn: ["Gallery", "Video Cards"],
                 priority: 5,
-                tags: ["outdoor", "rooftop", "red-blazer", "urban-chic"]
+                tags: ["runway", "fashion-show", "couture"]
             },
             {
-                id: "model_outdoor_05",
-                title: "Rooftop Blazer Standing Pose",
+                id: "model_runway_02",
+                title: "Runway Walk II",
                 category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-05.jpeg",
+                subcategory: "Runway",
+                path: "assets/model/Runway/runway-02.png",
                 orientation: "portrait",
                 featured: true,
-                usedIn: ["Gallery"],
+                usedIn: ["Gallery", "Instagram"],
                 priority: 5,
-                tags: ["outdoor", "rooftop", "red-blazer", "urban"]
+                tags: ["runway", "fashion-week", "walk"]
             },
             {
-                id: "model_outdoor_06",
-                title: "Rooftop Low Angle Crouching",
+                id: "model_runway_03",
+                title: "Runway Walk III",
                 category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-06.jpeg",
+                subcategory: "Runway",
+                path: "assets/model/Runway/runway-03.jpeg",
                 orientation: "portrait",
                 featured: false,
                 usedIn: ["Gallery"],
                 priority: 4,
-                tags: ["outdoor", "rooftop", "crouch", "urban"]
-            },
-            {
-                id: "model_outdoor_07",
-                title: "Rooftop Ledge Cityscape",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-07.jpeg",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["Gallery"],
-                priority: 5,
-                tags: ["outdoor", "rooftop", "cityscape", "skyline"]
-            },
-            {
-                id: "model_outdoor_08",
-                title: "Rooftop Kneeling Sky Frame",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-08.jpeg",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["outdoor", "rooftop", "sky", "kneeling"]
-            },
-            {
-                id: "model_outdoor_09",
-                title: "Rooftop Blazer Shoulders Draped",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-09.jpeg",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["outdoor", "rooftop", "fashion", "full-body"]
-            },
-            {
-                id: "model_outdoor_10",
-                title: "Rooftop Ledge Relaxed Seated",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-10.jpeg",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["Gallery"],
-                priority: 5,
-                tags: ["outdoor", "rooftop", "seated", "cityscape"]
-            },
-            {
-                id: "model_outdoor_11",
-                title: "Concrete Ledge Contemplative Pose",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-11.jpeg",
-                orientation: "portrait",
-                featured: false,
-                usedIn: ["Gallery"],
-                priority: 4,
-                tags: ["outdoor", "rooftop", "contemplative", "sky"]
-            },
-            {
-                id: "model_outdoor_12",
-                title: "Rooftop Edge Wide Editorial",
-                category: "Model",
-                subcategory: "Outdoor",
-                path: "assets/model/outdoor/model-outdoor-12.jpeg",
-                orientation: "portrait",
-                featured: true,
-                usedIn: ["Gallery"],
-                priority: 5,
-                tags: ["outdoor", "rooftop", "editorial", "wide"]
+                tags: ["runway", "backstage", "event"]
             }
         ],
-        closeups: [
+        jwellery: [
             {
-                id: "model_closeup_01",
-                title: "Beauty Bokeh Jewellery Closeup",
+                id: "model_jewellery_01",
+                title: "Jewellery Campaign I",
                 category: "Model",
-                subcategory: "Closeups",
-                path: "assets/model/closeups/model-closeup-01.webp",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-01.jpeg",
                 orientation: "portrait",
                 featured: true,
-                usedIn: ["Gallery"],
+                usedIn: ["Model Card", "Gallery"],
                 priority: 5,
-                tags: ["closeup", "beauty", "bokeh", "necklace"]
+                tags: ["jewellery", "gold", "traditional", "heritage"]
             },
             {
-                id: "model_closeup_02",
-                title: "Diamond Bracelet Hand Closeup",
+                id: "model_jewellery_02",
+                title: "Jewellery Campaign II",
                 category: "Model",
-                subcategory: "Closeups",
-                path: "assets/model/closeups/model-closeup-02.webp",
-                orientation: "landscape",
-                featured: false,
-                usedIn: ["Campaign Cards"],
-                priority: 3,
-                tags: ["closeup", "bracelet", "jewellery", "detail"]
-            }
-        ],
-        events: [
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-02.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Campaigns"],
+                priority: 5,
+                tags: ["jewellery", "necklace", "campaign", "regal"]
+            },
             {
-                id: "model_event_01",
-                title: "Runway Backstage Red Dress",
+                id: "model_jewellery_03",
+                title: "Jewellery Campaign III",
                 category: "Model",
-                subcategory: "Events",
-                path: "assets/model/events/model-event-01.webp",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-03.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Instagram"],
+                priority: 5,
+                tags: ["jewellery", "bridal", "traditional"]
+            },
+            {
+                id: "model_jewellery_04",
+                title: "Jewellery Campaign IV",
+                category: "Model",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-04.jpeg",
+                orientation: "portrait",
+                featured: true,
+                usedIn: ["Gallery", "Comp Card"],
+                priority: 5,
+                tags: ["jewellery", "portrait", "closeup"]
+            },
+            {
+                id: "model_jewellery_05",
+                title: "Jewellery Campaign V",
+                category: "Model",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-05.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery", "Comp Card"],
+                priority: 4,
+                tags: ["jewellery", "detail", "bracelet"]
+            },
+            {
+                id: "model_jewellery_06",
+                title: "Jewellery Campaign VI",
+                category: "Model",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-06.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery"],
+                priority: 4,
+                tags: ["jewellery", "necklace", "set"]
+            },
+            {
+                id: "model_jewellery_07",
+                title: "Jewellery Campaign VII",
+                category: "Model",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-07.jpeg",
+                orientation: "portrait",
+                featured: false,
+                usedIn: ["Gallery"],
+                priority: 4,
+                tags: ["jewellery", "traditional", "ornament"]
+            },
+            {
+                id: "model_jewellery_08",
+                title: "Jewellery Campaign VIII",
+                category: "Model",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-08.jpeg",
                 orientation: "portrait",
                 featured: false,
                 usedIn: ["Gallery"],
                 priority: 3,
-                tags: ["event", "backstage", "runway", "red-gown"]
+                tags: ["jewellery", "ring", "detail"]
             },
             {
-                id: "model_event_02",
-                title: "Fashion Show Event Floor",
+                id: "model_jewellery_09",
+                title: "Jewellery Campaign IX",
                 category: "Model",
-                subcategory: "Events",
-                path: "assets/model/events/model-event-02.webp",
+                subcategory: "Jewellery",
+                path: "assets/model/jwellery/jewellery-09.jpeg",
                 orientation: "portrait",
                 featured: false,
                 usedIn: ["Gallery"],
                 priority: 3,
-                tags: ["event", "fashion-show", "runway", "crowd"]
+                tags: ["jewellery", "bangle", "gold"]
+            }
+        ],
+        marquee: [
+            {
+                id: "marquee_malabar",
+                title: "Malabar Gold & Diamonds",
+                category: "Brand",
+                subcategory: "Marquee",
+                path: "assets/model/marquee/malabar.png"
+            },
+            {
+                id: "marquee_bellavita",
+                title: "Bella Vita Luxury",
+                category: "Brand",
+                subcategory: "Marquee",
+                path: "assets/model/marquee/bellavita.png"
+            },
+            {
+                id: "marquee_z",
+                title: "ZCULT",
+                category: "Brand",
+                subcategory: "Marquee",
+                path: "assets/model/marquee/z.png"
+            },
+            {
+                id: "marquee_m",
+                title: "MBJ Venkateswara Jewellers",
+                category: "Brand",
+                subcategory: "Marquee",
+                path: "assets/model/marquee/m.png"
+            },
+            {
+                id: "marquee_n",
+                title: "Brand Partner N",
+                category: "Brand",
+                subcategory: "Marquee",
+                path: "assets/model/marquee/n.png"
+            },
+            {
+                id: "marquee_a",
+                title: "Brand Partner A",
+                category: "Brand",
+                subcategory: "Marquee",
+                path: "assets/model/marquee/a.png"
             }
         ]
-    },
-    bharatanatyam: {
-        performances: [],
-        portraits: [],
-        costumes: [],
-        gallery: []
     },
     common: {
         icons: [
@@ -442,6 +477,18 @@ export const imageRegistry = {
                 id: "common_bg_temple_doors",
                 title: "Ancient Temple Doors Opening",
                 path: "assets/common/backgrounds/common-bg-temple-doors.jpg"
+            }
+        ],
+        reference: [
+            {
+                id: "common_ref_jewellery_hand",
+                title: "Jewellery Hand Reference",
+                path: "assets/common/reference/reference-jewellery-hand.jpeg"
+            },
+            {
+                id: "common_ref_jewellery_shoot",
+                title: "Jewellery Shoot Reference",
+                path: "assets/common/reference/reference-jewellery-shoot.jpeg"
             }
         ]
     }
