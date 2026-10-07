@@ -505,21 +505,21 @@
 
     /* Marquee */
     .marquee {
-        padding: 1.5rem 0;
+        padding: 2rem 0;
     }
 
     .marquee__item {
-        padding: 0 1.5rem;
+        padding: 0 1.75rem;
     }
 
     .marquee__logo {
-        max-height: 50px;
-        max-width: 120px;
+        max-height: 75px;
+        max-width: 175px;
     }
 
     .marquee__separator {
-        padding: 0 0.8rem;
-        font-size: 0.9rem;
+        padding: 0 1rem;
+        font-size: 1.15rem;
     }
 
     /* Section Labels */

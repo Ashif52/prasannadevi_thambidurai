@@ -57,7 +57,7 @@
             items: [
                 {
                     src: "assets/model/fashion/fashion-01.jpeg",
-                    title: "Dark Glamour",
+                    title: "Glamour",
                     category: "Haute Couture",
                     desc: "High-glamour concept shoot blending structured textures, deep shadows, and avant-garde styling.",
                     location: "Fashion Studio, Chennai"
